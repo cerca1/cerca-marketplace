@@ -488,6 +488,7 @@ const newProduct = {
   name: title,
   price: price,
   location: location,
+  description: description,
   category: "Otros",
   icon: "📦",
 };

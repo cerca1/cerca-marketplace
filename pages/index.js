@@ -396,7 +396,7 @@ export default function Home() {
           >
             + Publicar gratis
           </button>
-        
+        {/* prueba */}
       </main>
 
       {/* FOOTER */}

@@ -7,6 +7,7 @@ export default function Home() {
   const [price, setPrice] = useState("");
 const [location, setLocation] = useState("");
   const [description, setDescription] = useState("");
+  const [image, setImage] = useState("");
   const [publishedProducts, setPublishedProducts] = useState(() => {
   
   if (typeof window !== "undefined") {
@@ -481,6 +482,27 @@ onChange={(e) => setDescription(e.target.value)}
         border: "1px solid #d1d5db",
       }}
     />
+      <input
+  type="file"
+  accept="image/*"
+  onChange={(e) => {
+    const file = e.target.files[0];
+
+    if (file) {
+      const reader = new FileReader();
+
+      reader.onloadend = () => {
+        setImage(reader.result);
+      };
+
+      reader.readAsDataURL(file);
+    }
+  }}
+  style={{
+    width: "100%",
+    marginBottom: "15px",
+  }}
+/>
 
     <button
   onClick={() => {
@@ -489,6 +511,7 @@ const newProduct = {
   price: price,
   location: location,
   description: description,
+  image: image,
   category: "Otros",
   icon: "📦",
 };
@@ -511,6 +534,7 @@ localStorage.setItem(
   setPrice("");
   setLocation("");
   setDescription("");
+    setImage("");
   setShowForm(false);
 }}
       style={{

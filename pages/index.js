@@ -475,7 +475,8 @@ onChange={(e) => setDescription(e.target.value)}
       }}
     />
 
-    <buttononClick={() => {
+    <button
+  onClick={() => {
   setPublishedProducts([
     ...publishedProducts,
     {

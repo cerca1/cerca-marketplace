@@ -484,16 +484,27 @@ onChange={(e) => setDescription(e.target.value)}
 
     <button
   onClick={() => {
-  setPublishedProducts((prev) => [
+const newProduct = {
+  name: title,
+  price: price,
+  location: location,
+  category: "Otros",
+  icon: "📦",
+};
+
+setPublishedProducts((prev) => [
   ...prev,
-    {
-      name: title,
-      price: price,
-      location: location,
-      category: "Otros",
-      icon: "📦",
-    },
-  ]);
+  newProduct,
+]);
+
+const savedProducts = JSON.parse(
+  localStorage.getItem("publishedProducts") || "[]"
+);
+
+localStorage.setItem(
+  "publishedProducts",
+  JSON.stringify([...savedProducts, newProduct])
+);
 
   setTitle("");
   setPrice("");

@@ -7,6 +7,7 @@ export default function Home() {
   const [price, setPrice] = useState("");
 const [location, setLocation] = useState("");
   const [description, setDescription] = useState("");
+  const [publishedProducts, setPublishedProducts] = useState([]);
   const categories = [
     { name: "Vehículos", icon: "🚗" },
     { name: "Inmuebles", icon: "🏠" },
@@ -296,7 +297,7 @@ const [location, setLocation] = useState("");
             gap: "20px",
           }}
         >
-          {products.map((product) => (
+          {[...publishedProducts, ...products].map((product) => ( 
             <div
               key={product.name}
               style={{
@@ -474,8 +475,24 @@ onChange={(e) => setDescription(e.target.value)}
       }}
     />
 
-    <button
-      onClick={() => alert("Publicación creada correctamente")}
+    <buttononClick={() => {
+  setPublishedProducts([
+    ...publishedProducts,
+    {
+      name: title,
+      price: price,
+      location: location,
+      category: "Otros",
+      icon: "📦",
+    },
+  ]);
+
+  setTitle("");
+  setPrice("");
+  setLocation("");
+  setDescription("");
+  setShowForm(false);
+}}
       style={{
         background: "#111827",
         color: "white",

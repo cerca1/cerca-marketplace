@@ -2,6 +2,7 @@ import { useState } from "react";
 
 export default function Home() {
   const [search, setSearch] = useState("");
+  const [showForm, setShowForm] = useState(false);
 
   const categories = [
     { name: "Vehículos", icon: "🚗" },
@@ -392,7 +393,7 @@ export default function Home() {
               fontWeight: "700",
               cursor: "pointer",
             }}
-           onClick={() => alert("¡El botón funciona!")}
+           onClick={() => setShowForm(true)}
           >
             + Publicar gratis
           </button>
@@ -400,6 +401,100 @@ export default function Home() {
 
 </main>
 
+{showForm && (
+  <section
+    style={{
+      maxWidth: "700px",
+      margin: "40px auto",
+      background: "white",
+      padding: "30px",
+      borderRadius: "16px",
+      border: "1px solid #e5e7eb",
+    }}
+  >
+    <h2>Publicar un producto</h2>
+
+    <input
+      placeholder="Título del producto"
+      style={{
+        width: "100%",
+        boxSizing: "border-box",
+        padding: "14px",
+        marginBottom: "15px",
+        borderRadius: "10px",
+        border: "1px solid #d1d5db",
+      }}
+    />
+
+    <input
+      placeholder="Precio"
+      style={{
+        width: "100%",
+        boxSizing: "border-box",
+        padding: "14px",
+        marginBottom: "15px",
+        borderRadius: "10px",
+        border: "1px solid #d1d5db",
+      }}
+    />
+
+    <input
+      placeholder="Ubicación"
+      style={{
+        width: "100%",
+        boxSizing: "border-box",
+        padding: "14px",
+        marginBottom: "15px",
+        borderRadius: "10px",
+        border: "1px solid #d1d5db",
+      }}
+    />
+
+    <textarea
+      placeholder="Descripción"
+      rows="5"
+      style={{
+        width: "100%",
+        boxSizing: "border-box",
+        padding: "14px",
+        marginBottom: "15px",
+        borderRadius: "10px",
+        border: "1px solid #d1d5db",
+      }}
+    />
+
+    <button
+      onClick={() => alert("Publicación creada correctamente")}
+      style={{
+        background: "#111827",
+        color: "white",
+        border: "none",
+        borderRadius: "10px",
+        padding: "15px 25px",
+        fontWeight: "700",
+        cursor: "pointer",
+      }}
+    >
+      Publicar
+    </button>
+
+    <button
+      onClick={() => setShowForm(false)}
+      style={{
+        marginLeft: "10px",
+        background: "white",
+        color: "#111827",
+        border: "1px solid #d1d5db",
+        borderRadius: "10px",
+        padding: "15px 25px",
+        fontWeight: "700",
+        cursor: "pointer",
+      }}
+    >
+      Cancelar
+    </button>
+  </section>
+)}
 {/* FOOTER */}
       <footer
         style={{

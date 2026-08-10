@@ -8,12 +8,7 @@ export default function Home() {
 const [location, setLocation] = useState("");
   const [description, setDescription] = useState("");
   const [publishedProducts, setPublishedProducts] = useState(() => {
-    useEffect(() => {
-  localStorage.setItem(
-    "publishedProducts",
-    JSON.stringify(publishedProducts)
-  );
-}, [publishedProducts]);
+  
   if (typeof window !== "undefined") {
     const saved = localStorage.getItem("publishedProducts");
     return saved ? JSON.parse(saved) : [];

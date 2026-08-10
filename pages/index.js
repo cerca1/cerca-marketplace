@@ -1,4 +1,4 @@
-import { useState } from "react"; 
+import { useEffect, useState } from "react"; 
 
 export default function Home() {
   const [search, setSearch] = useState("");
@@ -7,7 +7,19 @@ export default function Home() {
   const [price, setPrice] = useState("");
 const [location, setLocation] = useState("");
   const [description, setDescription] = useState("");
-  const [publishedProducts, setPublishedProducts] = useState([]);
+  const [publishedProducts, setPublishedProducts] = useState(() => {
+    useEffect(() => {
+  localStorage.setItem(
+    "publishedProducts",
+    JSON.stringify(publishedProducts)
+  );
+}, [publishedProducts]);
+  if (typeof window !== "undefined") {
+    const saved = localStorage.getItem("publishedProducts");
+    return saved ? JSON.parse(saved) : [];
+  }
+  return [];
+});
   const categories = [
     { name: "Vehículos", icon: "🚗" },
     { name: "Inmuebles", icon: "🏠" },

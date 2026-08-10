@@ -325,7 +325,19 @@ const [location, setLocation] = useState("");
                   fontSize: "70px",
                 }}
               >
-                {product.icon}
+               {product.image ? (
+  <img
+    src={product.image}
+    alt={product.name}
+    style={{
+      width: "100%",
+      height: "220px",
+      objectFit: "cover",
+    }}
+  />
+) : (
+  product.icon
+)}
               </div>
 
               <div style={{ padding: "18px" }}>

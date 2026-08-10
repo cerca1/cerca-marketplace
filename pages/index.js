@@ -3,6 +3,7 @@ import { useState } from "react";
 export default function Home() {
   const [search, setSearch] = useState("");
   const [showForm, setShowForm] = useState(false);
+  const [title, setTitle] = useState("");
 
   const categories = [
     { name: "Vehículos", icon: "🚗" },
@@ -416,6 +417,8 @@ export default function Home() {
 
     <input
       placeholder="Título del producto"
+value={title}
+onChange={(e) => setTitle(e.target.value)}
       style={{
         width: "100%",
         boxSizing: "border-box",

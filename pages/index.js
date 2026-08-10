@@ -392,10 +392,11 @@ export default function Home() {
               fontWeight: "700",
               cursor: "pointer",
             }}
+           onClick={() => alert("¡El botón funciona!")}
           >
             + Publicar gratis
           </button>
-        </section>
+        
       </main>
 
       {/* FOOTER */}

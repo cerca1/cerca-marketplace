@@ -4,7 +4,9 @@ export default function Home() {
   const [search, setSearch] = useState("");
   const [showForm, setShowForm] = useState(false);
   const [title, setTitle] = useState("");
-
+  const [price, setPrice] = useState("");
+const [location, setLocation] = useState("");
+  const [description, setDescription] = useState("");
   const categories = [
     { name: "Vehículos", icon: "🚗" },
     { name: "Inmuebles", icon: "🏠" },
@@ -431,6 +433,8 @@ onChange={(e) => setTitle(e.target.value)}
 
     <input
       placeholder="Precio"
+value={price}
+onChange={(e) => setPrice(e.target.value)}
       style={{
         width: "100%",
         boxSizing: "border-box",
@@ -443,6 +447,8 @@ onChange={(e) => setTitle(e.target.value)}
 
     <input
       placeholder="Ubicación"
+value={location}
+onChange={(e) => setLocation(e.target.value)}
       style={{
         width: "100%",
         boxSizing: "border-box",
@@ -455,6 +461,8 @@ onChange={(e) => setTitle(e.target.value)}
 
     <textarea
       placeholder="Descripción"
+value={description}
+onChange={(e) => setDescription(e.target.value)}
       rows="5"
       style={{
         width: "100%",

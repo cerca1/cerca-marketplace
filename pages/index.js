@@ -393,7 +393,7 @@ export default function Home() {
               fontWeight: "700",
               cursor: "pointer",
             }}
-           onClick={() => setShowForm(true)}
+           onClick={() => alert("PRUEBA")}
           >
             + Publicar gratis
           </button>

@@ -397,9 +397,10 @@ export default function Home() {
             + Publicar gratis
           </button>
         {/* prueba */}
-      </main>
 
-      {/* FOOTER */}
+</main>
+
+{/* FOOTER */}
       <footer
         style={{
           background: "#111827",

@@ -18,62 +18,74 @@ export default function Home() {
       icon: "➕",
     },
     {
-      name: "Encontrá productos cerca",
-      price: "Fácil y rápido",
-      category: "Compra local",
-      icon: "📍",
+      name: "Auto usado",
+      price: "$8.500.000",
+      category: "Vehículos",
+      icon: "🚗",
     },
     {
-      name: "Vendé a personas de tu zona",
-      price: "Sin complicaciones",
-      category: "Venta local",
-      icon: "🤝",
+      name: "Casa en venta",
+      price: "$65.000.000",
+      category: "Inmuebles",
+      icon: "🏠",
+    },
+    {
+      name: "Celular",
+      price: "$450.000",
+      category: "Electrónica",
+      icon: "📱",
     },
   ];
 
   return (
-    <main
+    <div
       style={{
         minHeight: "100vh",
-        background: "#f5f6f8",
-        fontFamily: "Arial, sans-serif",
+        background: "#f5f5f5",
         color: "#171717",
+        fontFamily:
+          "Arial, Helvetica, sans-serif",
       }}
     >
       {/* HEADER */}
       <header
         style={{
           background: "#ffffff",
-          borderBottom: "1px solid #e5e7eb",
-          padding: "16px 6%",
+          borderBottom: "1px solid #e5e5e5",
+          padding: "18px 6%",
           display: "flex",
           alignItems: "center",
-          justifyContent: "space-between",
-          gap: "20px",
+          gap: "30px",
           flexWrap: "wrap",
         }}
       >
-        <div>
+        <div style={{ minWidth: "120px" }}>
           <div
             style={{
-              fontSize: "32px",
-              fontWeight: "800",
+              fontSize: "30px",
+              fontWeight: "900",
               letterSpacing: "-1px",
             }}
           >
             cerca
           </div>
-          <div style={{ fontSize: "12px", color: "#777" }}>
+
+          <div
+            style={{
+              fontSize: "12px",
+              color: "#777",
+              marginTop: "-3px",
+            }}
+          >
             Comprá y vendé cerca tuyo
           </div>
         </div>
 
         <div
           style={{
-            flex: "1",
-            maxWidth: "600px",
+            flex: 1,
             minWidth: "250px",
-            position: "relative",
+            maxWidth: "650px",
           }}
         >
           <input
@@ -84,19 +96,26 @@ export default function Home() {
               padding: "15px 20px",
               borderRadius: "12px",
               border: "1px solid #ddd",
-              fontSize: "16px",
+              fontSize: "15px",
               outline: "none",
             }}
           />
         </div>
 
-        <div style={{ display: "flex", gap: "10px" }}>
+        <div
+          style={{
+            display: "flex",
+            gap: "10px",
+            alignItems: "center",
+          }}
+        >
           <button
             style={{
-              padding: "12px 18px",
-              borderRadius: "10px",
+              background: "white",
               border: "1px solid #ddd",
-              background: "#fff",
+              borderRadius: "10px",
+              padding: "12px 18px",
+              fontWeight: "700",
               cursor: "pointer",
             }}
           >
@@ -105,269 +124,353 @@ export default function Home() {
 
           <button
             style={{
-              padding: "12px 18px",
-              borderRadius: "10px",
-              border: "none",
               background: "#111",
-              color: "#fff",
-              fontWeight: "700",
+              color: "white",
+              border: "none",
+              borderRadius: "10px",
+              padding: "13px 20px",
+              fontWeight: "800",
               cursor: "pointer",
             }}
           >
-            Publicar
+            + Publicar
           </button>
         </div>
       </header>
 
       {/* HERO */}
-      <section
-        style={{
-          padding: "60px 6%",
-          background: "#111",
-          color: "#fff",
-        }}
-      >
-        <div style={{ maxWidth: "900px" }}>
+      <main>
+        <section
+          style={{
+            padding: "55px 6%",
+          }}
+        >
           <div
             style={{
-              display: "inline-block",
-              padding: "7px 12px",
-              background: "#2b2b2b",
-              borderRadius: "20px",
-              fontSize: "13px",
-              marginBottom: "18px",
+              background: "#111",
+              color: "white",
+              borderRadius: "24px",
+              padding: "65px 7%",
+              maxWidth: "1200px",
+              margin: "0 auto",
             }}
           >
-            📍 Marketplace local
-          </div>
+            <div
+              style={{
+                display: "inline-block",
+                background: "#2a2a2a",
+                padding: "8px 13px",
+                borderRadius: "30px",
+                fontSize: "13px",
+                marginBottom: "20px",
+              }}
+            >
+              📍 Marketplace local
+            </div>
 
-          <h1
-            style={{
-              fontSize: "clamp(38px, 6vw, 68px)",
-              lineHeight: "1",
-              margin: "0 0 20px",
-              letterSpacing: "-3px",
-            }}
-          >
-            Encontrá lo que buscás.
-            <br />
-            <span style={{ color: "#bdbdbd" }}>Cerca tuyo.</span>
-          </h1>
+            <h1
+              style={{
+                fontSize: "clamp(42px, 7vw, 76px)",
+                lineHeight: "0.98",
+                margin: "0",
+                maxWidth: "850px",
+                letterSpacing: "-4px",
+              }}
+            >
+              Encontrá lo que buscás.
+              <br />
+              Cerca tuyo.
+            </h1>
 
-          <p
-            style={{
-              fontSize: "19px",
-              color: "#cfcfcf",
-              maxWidth: "650px",
-              lineHeight: "1.5",
-            }}
-          >
-            Comprá, vendé y descubrí productos y servicios de personas y
-            negocios de tu zona.
-          </p>
+            <p
+              style={{
+                color: "#cfcfcf",
+                fontSize: "18px",
+                lineHeight: "1.5",
+                maxWidth: "650px",
+                marginTop: "25px",
+              }}
+            >
+              Comprá, vendé y descubrí productos y
+              servicios de personas y negocios de tu
+              zona.
+            </p>
 
-          <div style={{ marginTop: "30px" }}>
             <button
               style={{
-                padding: "15px 25px",
-                border: "none",
-                borderRadius: "10px",
-                background: "#fff",
+                marginTop: "20px",
+                background: "white",
                 color: "#111",
-                fontSize: "16px",
-                fontWeight: "700",
+                border: "none",
+                padding: "15px 23px",
+                borderRadius: "10px",
+                fontSize: "15px",
+                fontWeight: "800",
                 cursor: "pointer",
               }}
             >
               Explorar productos →
             </button>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* CATEGORÍAS */}
-      <section style={{ padding: "45px 6%" }}>
-        <div
+        {/* CATEGORÍAS */}
+        <section
           style={{
-            display: "flex",
-            justifyContent: "space-between",
-            alignItems: "center",
-            marginBottom: "22px",
+            padding: "10px 6% 50px",
+            maxWidth: "1250px",
+            margin: "0 auto",
           }}
         >
-          <div>
-            <h2 style={{ margin: 0, fontSize: "28px" }}>
-              Categorías
-            </h2>
-            <p style={{ color: "#777", marginTop: "7px" }}>
-              Explorá lo que hay cerca tuyo
-            </p>
-          </div>
-        </div>
-
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(130px, 1fr))",
-            gap: "12px",
-          }}
-        >
-          {categories.map((category) => (
-            <button
-              key={category.name}
-              style={{
-                background: "#fff",
-                border: "1px solid #e5e7eb",
-                borderRadius: "14px",
-                padding: "22px 12px",
-                cursor: "pointer",
-                textAlign: "center",
-              }}
-            >
-              <div style={{ fontSize: "30px", marginBottom: "9px" }}>
-                {category.icon}
-              </div>
-              <div style={{ fontWeight: "700", fontSize: "14px" }}>
-                {category.name}
-              </div>
-            </button>
-          ))}
-        </div>
-      </section>
-
-      {/* PUBLICIDAD / DESTACADO */}
-      <section style={{ padding: "0 6% 45px" }}>
-        <div
-          style={{
-            background: "#e9e9e9",
-            borderRadius: "18px",
-            padding: "35px",
-            display: "flex",
-            justifyContent: "space-between",
-            alignItems: "center",
-            gap: "25px",
-            flexWrap: "wrap",
-          }}
-        >
-          <div>
-            <div
-              style={{
-                fontSize: "13px",
-                fontWeight: "700",
-                color: "#666",
-                marginBottom: "8px",
-              }}
-            >
-              ¿TENÉS ALGO PARA VENDER?
-            </div>
-
-            <h2 style={{ margin: "0 0 10px", fontSize: "30px" }}>
-              Publicalo en Cerca.
-            </h2>
-
-            <p style={{ margin: 0, color: "#666" }}>
-              Llegá a compradores de tu zona.
-            </p>
-          </div>
-
-          <button
+          <h2
             style={{
-              padding: "15px 24px",
-              background: "#111",
-              color: "#fff",
-              border: "none",
-              borderRadius: "10px",
-              fontWeight: "700",
-              cursor: "pointer",
+              fontSize: "32px",
+              marginBottom: "8px",
             }}
           >
-            Publicar producto
-          </button>
-        </div>
-      </section>
+            Categorías
+          </h2>
 
-      {/* PRODUCTOS */}
-      <section style={{ padding: "0 6% 60px" }}>
-        <h2 style={{ fontSize: "28px", marginBottom: "8px" }}>
-          Empezá en Cerca
-        </h2>
+          <p
+            style={{
+              color: "#777",
+              marginBottom: "30px",
+            }}
+          >
+            Explorá lo que hay cerca tuyo
+          </p>
 
-        <p style={{ color: "#777", marginBottom: "25px" }}>
-          Todo lo que podés hacer en nuestra plataforma.
-        </p>
-
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))",
-            gap: "18px",
-          }}
-        >
-          {products.map((product) => (
-            <div
-              key={product.name}
-              style={{
-                background: "#fff",
-                borderRadius: "16px",
-                padding: "25px",
-                border: "1px solid #e5e7eb",
-              }}
-            >
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns:
+                "repeat(auto-fit, minmax(120px, 1fr))",
+              gap: "14px",
+            }}
+          >
+            {categories.map((category) => (
               <div
+                key={category.name}
                 style={{
-                  width: "55px",
-                  height: "55px",
-                  borderRadius: "14px",
-                  background: "#f0f0f0",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  fontSize: "27px",
-                  marginBottom: "18px",
+                  background: "white",
+                  border: "1px solid #e5e5e5",
+                  borderRadius: "16px",
+                  padding: "22px 10px",
+                  textAlign: "center",
+                  cursor: "pointer",
+                  transition: "0.2s",
                 }}
               >
-                {product.icon}
-              </div>
+                <div
+                  style={{
+                    fontSize: "34px",
+                    marginBottom: "10px",
+                  }}
+                >
+                  {category.icon}
+                </div>
 
+                <div
+                  style={{
+                    fontWeight: "700",
+                    fontSize: "14px",
+                  }}
+                >
+                  {category.name}
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* VENTA */}
+        <section
+          style={{
+            padding: "10px 6% 50px",
+            maxWidth: "1250px",
+            margin: "0 auto",
+          }}
+        >
+          <div
+            style={{
+              background: "white",
+              borderRadius: "20px",
+              padding: "35px",
+              border: "1px solid #e5e5e5",
+              display: "flex",
+              justifyContent: "space-between",
+              alignItems: "center",
+              gap: "25px",
+              flexWrap: "wrap",
+            }}
+          >
+            <div>
               <div
                 style={{
                   color: "#777",
                   fontSize: "13px",
-                  marginBottom: "6px",
+                  fontWeight: "700",
                 }}
               >
-                {product.category}
+                ¿TENÉS ALGO PARA VENDER?
               </div>
 
-              <h3 style={{ margin: "0 0 10px", fontSize: "19px" }}>
-                {product.name}
-              </h3>
+              <h2
+                style={{
+                  margin: "8px 0",
+                  fontSize: "30px",
+                }}
+              >
+                Publicalo en Cerca.
+              </h2>
 
-              <strong style={{ fontSize: "16px" }}>
-                {product.price}
-              </strong>
+              <p
+                style={{
+                  color: "#777",
+                  margin: 0,
+                }}
+              >
+                Llegá a compradores de tu zona.
+              </p>
             </div>
-          ))}
-        </div>
-      </section>
+
+            <button
+              style={{
+                background: "#111",
+                color: "white",
+                border: "none",
+                borderRadius: "10px",
+                padding: "15px 24px",
+                fontWeight: "800",
+                cursor: "pointer",
+              }}
+            >
+              Publicar producto
+            </button>
+          </div>
+        </section>
+
+        {/* PRODUCTOS */}
+        <section
+          style={{
+            padding: "10px 6% 70px",
+            maxWidth: "1250px",
+            margin: "0 auto",
+          }}
+        >
+          <h2 style={{ fontSize: "32px" }}>
+            Productos destacados
+          </h2>
+
+          <p style={{ color: "#777" }}>
+            Algunas publicaciones que podés encontrar en
+            Cerca.
+          </p>
+
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns:
+                "repeat(auto-fit, minmax(220px, 1fr))",
+              gap: "18px",
+              marginTop: "25px",
+            }}
+          >
+            {products.map((product) => (
+              <div
+                key={product.name}
+                style={{
+                  background: "white",
+                  borderRadius: "18px",
+                  overflow: "hidden",
+                  border: "1px solid #e5e5e5",
+                }}
+              >
+                <div
+                  style={{
+                    height: "150px",
+                    background: "#eeeeee",
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    fontSize: "55px",
+                  }}
+                >
+                  {product.icon}
+                </div>
+
+                <div style={{ padding: "20px" }}>
+                  <div
+                    style={{
+                      color: "#888",
+                      fontSize: "12px",
+                      marginBottom: "8px",
+                    }}
+                  >
+                    {product.category}
+                  </div>
+
+                  <h3
+                    style={{
+                      margin: "0 0 12px",
+                      fontSize: "18px",
+                    }}
+                  >
+                    {product.name}
+                  </h3>
+
+                  <div
+                    style={{
+                      fontSize: "20px",
+                      fontWeight: "900",
+                    }}
+                  >
+                    {product.price}
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+      </main>
 
       {/* FOOTER */}
       <footer
         style={{
           background: "#111",
-          color: "#fff",
-          padding: "30px 6%",
+          color: "white",
+          padding: "45px 6%",
           textAlign: "center",
         }}
       >
-        <div style={{ fontSize: "24px", fontWeight: "800" }}>
+        <div
+          style={{
+            fontSize: "28px",
+            fontWeight: "900",
+          }}
+        >
           cerca
         </div>
 
-        <p style={{ color: "#aaa", marginBottom: 0 }}>
+        <p
+          style={{
+            color: "#aaa",
+            marginBottom: 0,
+          }}
+        >
           Comprá y vendé cerca tuyo.
         </p>
+
+        <p
+          style={{
+            color: "#666",
+            fontSize: "12px",
+            marginTop: "25px",
+          }}
+        >
+          © 2026 Cerca. Todos los derechos reservados.
+        </p>
       </footer>
-    </main>
+    </div>
   );
 }

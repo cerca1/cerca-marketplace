@@ -80,6 +80,127 @@ const [location, setLocation] = useState("");
   ];
 
   return (
+    {selectedProduct && (
+  <div
+    style={{
+      position: "fixed",
+      inset: 0,
+      background: "rgba(0,0,0,0.55)",
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+      zIndex: 9999,
+      padding: "20px",
+    }}
+    onClick={() => setSelectedProduct(null)}
+  >
+    <div
+      style={{
+        background: "white",
+        width: "100%",
+        maxWidth: "500px",
+        maxHeight: "90vh",
+        overflowY: "auto",
+        borderRadius: "18px",
+        padding: "25px",
+        boxSizing: "border-box",
+      }}
+      onClick={(e) => e.stopPropagation()}
+    >
+      <button
+        onClick={() => setSelectedProduct(null)}
+        style={{
+          float: "right",
+          border: "none",
+          background: "#f3f4f6",
+          borderRadius: "50%",
+          width: "35px",
+          height: "35px",
+          fontSize: "20px",
+          cursor: "pointer",
+        }}
+      >
+        ×
+      </button>
+
+      {selectedProduct.image ? (
+        <img
+          src={selectedProduct.image}
+          alt={selectedProduct.name}
+          style={{
+            width: "100%",
+            height: "250px",
+            objectFit: "cover",
+            borderRadius: "14px",
+            marginBottom: "20px",
+          }}
+        />
+      ) : (
+        <div
+          style={{
+            height: "180px",
+            background: "#eef0f3",
+            borderRadius: "14px",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            fontSize: "70px",
+            marginBottom: "20px",
+          }}
+        >
+          {selectedProduct.icon || "📦"}
+        </div>
+      )}
+
+      <div
+        style={{
+          color: "#6b7280",
+          fontSize: "14px",
+          marginBottom: "8px",
+        }}
+      >
+        {selectedProduct.category}
+      </div>
+
+      <h2 style={{ margin: "0 0 12px", fontSize: "26px" }}>
+        {selectedProduct.name}
+      </h2>
+
+      <div
+        style={{
+          fontSize: "24px",
+          fontWeight: "700",
+          marginBottom: "15px",
+        }}
+      >
+        {selectedProduct.price}
+      </div>
+
+      <div
+        style={{
+          fontSize: "16px",
+          marginBottom: "15px",
+        }}
+      >
+        📍 {selectedProduct.location}
+      </div>
+
+      {selectedProduct.description && (
+        <div
+          style={{
+            borderTop: "1px solid #e5e7eb",
+            paddingTop: "15px",
+            marginTop: "15px",
+            lineHeight: "1.6",
+          }}
+        >
+          <strong>Descripción</strong>
+          <p>{selectedProduct.description}</p>
+        </div>
+      )}
+    </div>
+  </div>
+)}
     <div
       style={{
         minHeight: "100vh",

@@ -79,8 +79,8 @@ const [location, setLocation] = useState("");
     },
   ];
 
-  return (
-    {selectedProduct && (
+return (
+  <>    {selectedProduct && (
   <div
     style={{
       position: "fixed",
@@ -742,5 +742,6 @@ localStorage.setItem(
         </p>
       </footer>
     </div>
+</>
   );
 }

@@ -312,7 +312,7 @@ const [location, setLocation] = useState("");
                 background: "#fffdf2",
                 borderRadius: "16px",
                 overflow: "hidden",
-                border: "1px solid #e5e7eb",
+                border: "2px solid #facc15",
               }}
             >
               <div

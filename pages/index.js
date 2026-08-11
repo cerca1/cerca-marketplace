@@ -383,7 +383,7 @@ border: "2px solid #e5e7eb",
             <div
               key={category.name}
 style={{
-  background: "white",
+  background: "#fffaf0",
   border: "1px solid #e5e7eb",
   borderRadius: "18px",
   padding: "24px 12px",

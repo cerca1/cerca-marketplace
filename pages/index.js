@@ -382,16 +382,23 @@ border: "2px solid #e5e7eb",
           {categories.map((category) => (
             <div
               key={category.name}
-              style={{
-                background: "white",
-                border: "1px solid #e5e7eb",
-                borderRadius: "14px",
-                padding: "22px 10px",
-                textAlign: "center",
-                cursor: "pointer",
-              }}
-            >
-              <div style={{ fontSize: "32px", marginBottom: "10px" }}>
+style={{
+  background: "white",
+  border: "1px solid #e5e7eb",
+  borderRadius: "18px",
+  padding: "24px 12px",
+  textAlign: "center",
+  cursor: "pointer",
+  transition: "all 0.2s ease",
+  boxShadow: "0 2px 8px rgba(0,0,0,0.04)",
+}}            >
+<div
+  style={{
+    fontSize: "36px",
+    marginBottom: "12px",
+    lineHeight: "1",
+  }}
+>
                 {category.icon}
               </div>
 

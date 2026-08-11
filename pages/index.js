@@ -311,7 +311,11 @@ const [location, setLocation] = useState("");
             gap: "20px",
           }}
         >
-          {[...publishedProducts, ...products].map((product) => ( 
+          {[...publishedProducts, ...products]
+  .filter((product) =>
+    product.name.toLowerCase().includes(search.toLowerCase())
+  )
+  .map((product) => ( 
             <div
               key={product.name}
               style={{

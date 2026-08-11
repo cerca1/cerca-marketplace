@@ -8,6 +8,7 @@ export default function Home() {
 const [location, setLocation] = useState("");
   const [description, setDescription] = useState("");
   const [image, setImage] = useState("");
+  const [selectedProduct, setSelectedProduct] = useState(null);
   const [publishedProducts, setPublishedProducts] = useState(() => {
   
   if (typeof window !== "undefined") {
@@ -320,6 +321,7 @@ const [location, setLocation] = useState("");
   .map((product) => ( 
             <div
               key={product.name}
+onClick={() => setSelectedProduct(product)}
               style={{
                 background: "#fffdf2",
                 borderRadius: "16px",

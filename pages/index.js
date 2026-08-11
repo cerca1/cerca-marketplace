@@ -230,11 +230,12 @@ return (
           }}
         >
           <div
-            style={{
-              fontSize: "30px",
-              fontWeight: "800",
-              color: "#111827",
-            }}
+          style={{
+  fontSize: "32px",
+  fontWeight: "900",
+  color: "#111827",
+  letterSpacing: "-1.5px",
+}}
           >
             cerca
           </div>

@@ -248,10 +248,9 @@ return (
               style={{
                 width: "100%",
                 boxSizing: "border-box",
-                padding: "15px 20px",
-                borderRadius: "12px",
-                border: "1px solid #d1d5db",
-                fontSize: "16px",
+padding: "14px 20px",
+borderRadius: "14px",
+border: "2px solid #e5e7eb",
                 outline: "none",
               }}
             />

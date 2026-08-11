@@ -309,7 +309,7 @@ const [location, setLocation] = useState("");
             <div
               key={product.name}
               style={{
-                background: "white",
+                background: "#fffdf2",
                 borderRadius: "16px",
                 overflow: "hidden",
                 border: "1px solid #e5e7eb",

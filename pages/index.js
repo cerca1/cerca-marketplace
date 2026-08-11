@@ -455,6 +455,7 @@ onClick={() => setSelectedProduct(product)}
                 borderRadius: "16px",
                 overflow: "hidden",
                 border: "1px solid #e5e7eb",
+               
                 boxShadow: "0 4px 14px rgba(0,0,0,0.06)",
               }}
             >

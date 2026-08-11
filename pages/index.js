@@ -313,8 +313,10 @@ const [location, setLocation] = useState("");
         >
           {[...publishedProducts, ...products]
   .filter((product) =>
-    product.name.toLowerCase().includes(search.toLowerCase())
-  )
+  product.name.toLowerCase().includes(search.toLowerCase()) ||
+  product.location.toLowerCase().includes(search.toLowerCase()) ||
+  product.category.toLowerCase().includes(search.toLowerCase())
+)
   .map((product) => ( 
             <div
               key={product.name}

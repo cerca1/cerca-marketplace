@@ -212,7 +212,7 @@ return (
       {/* HEADER */}
       <header
         style={{
-          background: "#facc15",
+          background: "#FFC400",
           borderBottom: "1px solid #e5e7eb",
           position: "sticky",
           top: 0,
@@ -231,7 +231,7 @@ return (
         >
           <div
           style={{
-  fontSize: "32px",
+  fontSize: "34px",
   fontWeight: "900",
   color: "#111827",
   letterSpacing: "-1.5px",

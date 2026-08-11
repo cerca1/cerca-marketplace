@@ -363,6 +363,7 @@ const [location, setLocation] = useState("");
                 <div
                   style={{
                     fontSize: "22px",
+                    color: "#111827",
                     fontWeight: "800",
                     marginBottom: "10px",
                   }}

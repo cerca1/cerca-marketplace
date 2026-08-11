@@ -84,7 +84,7 @@ const [location, setLocation] = useState("");
       {/* HEADER */}
       <header
         style={{
-          background: "#ffffff",
+          background: "#facc15",
           borderBottom: "1px solid #e5e7eb",
           position: "sticky",
           top: 0,

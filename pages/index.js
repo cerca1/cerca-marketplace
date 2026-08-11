@@ -464,8 +464,7 @@ height: "220px",                  background: "#eef0f3",
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
-                  fontSize: "70px",
-                }}
+fontSize: "55px",                }}
               >
                {product.image ? (
   <img

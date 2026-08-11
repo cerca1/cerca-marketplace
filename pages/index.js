@@ -454,13 +454,13 @@ onClick={() => setSelectedProduct(product)}
                 background: "#fffdf2",
                 borderRadius: "16px",
                 overflow: "hidden",
-                border: "2px solid #facc15",
+                border: "1px solid #e5e7eb",
+                boxShadow: "0 4px 14px rgba(0,0,0,0.06)",
               }}
             >
               <div
                 style={{
-                  height: "170px",
-                  background: "#eef0f3",
+height: "220px",                  background: "#eef0f3",
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",

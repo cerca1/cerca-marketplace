@@ -16,6 +16,12 @@ const [location, setLocation] = useState("");
   }
   return [];
 });
+  useEffect(() => {
+  localStorage.setItem(
+    "publishedProducts",
+    JSON.stringify(publishedProducts)
+  );
+}, [publishedProducts]);
   const categories = [
     { name: "Vehículos", icon: "🚗" },
     { name: "Inmuebles", icon: "🏠" },

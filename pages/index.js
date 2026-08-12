@@ -646,6 +646,26 @@ onChange={(e) => setLocation(e.target.value)}
     border: "1px solid #d1d5db",
   }}
 />
+  <select
+  value={category}
+  onChange={(e) => setCategory(e.target.value)}
+  style={{
+    width: "100%",
+    boxSizing: "border-box",
+    padding: "14px",
+    marginBottom: "15px",
+    borderRadius: "10px",
+    border: "1px solid #d1d5db",
+  }}
+>
+  <option value="Vehículos">Vehículos</option>
+  <option value="Hogar">Hogar</option>
+  <option value="Herramientas">Herramientas</option>
+  <option value="Electrónica">Electrónica</option>
+  <option value="Muebles">Muebles</option>
+  <option value="Ropa">Ropa</option>
+  <option value="Otros">Otros</option>
+</select>
     <textarea
       placeholder="Descripción"
 value={description}
@@ -713,6 +733,7 @@ localStorage.setItem(
   setLocation("");
   setDescription("");
     setImage("");
+    setCategory("Otros");
   setShowForm(false);
 }}
       style={{

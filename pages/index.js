@@ -185,14 +185,18 @@ return (
       >
         📍 {selectedProduct.location}
       </div>
-<div
+<a
+  href={tel:${selectedProduct.phone}}
   style={{
+    display: "block",
     fontSize: "16px",
     marginBottom: "15px",
+    color: "#111827",
+    textDecoration: "none",
   }}
 >
   📞 {selectedProduct.phone}
-</div>
+</a>
       {selectedProduct.description && (
         <div
           style={{

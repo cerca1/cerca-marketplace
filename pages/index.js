@@ -658,13 +658,11 @@ onChange={(e) => setLocation(e.target.value)}
     border: "1px solid #d1d5db",
   }}
 >
-  <option value="Vehículos">Vehículos</option>
-  <option value="Hogar">Hogar</option>
-  <option value="Herramientas">Herramientas</option>
-  <option value="Electrónica">Electrónica</option>
-  <option value="Muebles">Muebles</option>
-  <option value="Ropa">Ropa</option>
-  <option value="Otros">Otros</option>
+  {categories.map((cat) => (
+  <option key={cat.name} value={cat.name}>
+    {cat.name}
+  </option>
+))}
 </select>
     <textarea
       placeholder="Descripción"

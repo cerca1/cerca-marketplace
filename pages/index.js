@@ -189,6 +189,13 @@ return (
 href={"tel:" + selectedProduct.phone}
 >
 📞 Llamar: {selectedProduct.phone}</a>
+<a
+  href={"https://wa.me/" + selectedProduct.phone}
+  target="_blank"
+  rel="noreferrer"
+>
+  💬 WhatsApp
+</a>
       {selectedProduct.description && (
         <div
           style={{

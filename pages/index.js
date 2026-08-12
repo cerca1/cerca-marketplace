@@ -7,6 +7,7 @@ export default function Home() {
   const [price, setPrice] = useState("");
 const [location, setLocation] = useState("");
   const [description, setDescription] = useState("");
+  const [category, setCategory] = useState("Otros");
   const [image, setImage] = useState("");
   const [phone, setPhone] = useState("");
   const [selectedProduct, setSelectedProduct] = useState(null);
@@ -690,8 +691,7 @@ const newProduct = {
   description: description,
   image: image,
   phone: phone,
-  category: "Otros",
-  icon: "📦",
+category: category,  icon: "📦",
 };
 
 setPublishedProducts((prev) => [

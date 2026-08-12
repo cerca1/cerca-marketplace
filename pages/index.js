@@ -199,8 +199,7 @@ href={"tel:" + selectedProduct.phone}
           }}
         >
           <strong>Descripción</strong>
-          <p>{selectedProduct.description}</p>
-        </div>
+<p style={{ margin: "8px 0 0", color: "#4b5563", fontSize: "15px" }}>{selectedProduct.description}</p>        </div>
       )}
     </div>
   </div>

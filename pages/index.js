@@ -8,6 +8,7 @@ export default function Home() {
 const [location, setLocation] = useState("");
   const [description, setDescription] = useState("");
   const [image, setImage] = useState("");
+  const [phone, setPhone] = useState("");
   const [selectedProduct, setSelectedProduct] = useState(null);
   const [publishedProducts, setPublishedProducts] = useState(() => {
   
@@ -184,7 +185,14 @@ return (
       >
         📍 {selectedProduct.location}
       </div>
-
+<div
+  style={{
+    fontSize: "16px",
+    marginBottom: "15px",
+  }}
+>
+  📞 {selectedProduct.phone}
+</div>
       {selectedProduct.description && (
         <div
           style={{
@@ -622,7 +630,19 @@ onChange={(e) => setLocation(e.target.value)}
         border: "1px solid #d1d5db",
       }}
     />
-
+<input
+  placeholder="Teléfono"
+  value={phone}
+  onChange={(e) => setPhone(e.target.value)}
+  style={{
+    width: "100%",
+    boxSizing: "border-box",
+    padding: "14px",
+    marginBottom: "15px",
+    borderRadius: "10px",
+    border: "1px solid #d1d5db",
+  }}
+/>
     <textarea
       placeholder="Descripción"
 value={description}
@@ -667,6 +687,7 @@ const newProduct = {
   location: location,
   description: description,
   image: image,
+  phone: phone,
   category: "Otros",
   icon: "📦",
 };

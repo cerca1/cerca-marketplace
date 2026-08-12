@@ -188,8 +188,7 @@ return (
 <a
 href={"tel:" + selectedProduct.phone}
 >
-  📞 {selectedProduct.phone}
-</a>
+📞 Llamar: {selectedProduct.phone}</a>
       {selectedProduct.description && (
         <div
           style={{

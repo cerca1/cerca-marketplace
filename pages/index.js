@@ -186,8 +186,7 @@ return (
         📍 {selectedProduct.location}
       </div>
 <a
-  href={tel:${selectedProduct.phone}}
-  style={{
+href={tel:${selectedProduct.phone}}  style={{
     display: "block",
     fontSize: "16px",
     marginBottom: "15px",

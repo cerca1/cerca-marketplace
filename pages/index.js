@@ -797,6 +797,9 @@ fontSize: "70px",               }}
 >
   {likes[product.name] ? "❤️" : "🤍"}
 </button>
+  <span style={{ fontSize: "14px", marginLeft: "5px" }}>
+  {likes[product.name] ? 1 : 0} Me gusta
+</span>
             </div>
           ))}
         </div>

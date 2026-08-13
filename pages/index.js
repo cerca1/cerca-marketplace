@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 
 export default function Home() {
   const [search, setSearch] = useState("");
+  const [selectedCategory, setSelectedCategory] = useState("");
   const [showForm, setShowForm] = useState(false);
   const [title, setTitle] = useState("");
   const [price, setPrice] = useState("");
@@ -266,6 +267,26 @@ border: "2px solid #e5e7eb",
               }}
             />
           </div>
+              <select
+  value={selectedCategory}
+  onChange={(e) => setSelectedCategory(e.target.value)}
+  style={{
+    marginLeft: "10px",
+    padding: "14px 16px",
+    borderRadius: "14px",
+    border: "2px solid #e5e7eb",
+    background: "white",
+    fontWeight: "600",
+    cursor: "pointer",
+  }}
+>
+  <option value="">Todas las categorías</option>
+  {categories.map((cat) => (
+    <option key={cat.name} value={cat.name}>
+      {cat.icon} {cat.name}
+    </option>
+  ))}
+</select>
 
           <button
             style={{

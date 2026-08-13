@@ -13,6 +13,7 @@ const [location, setLocation] = useState("");
   const [phone, setPhone] = useState("");
   const [selectedProduct, setSelectedProduct] = useState(null);
   const [favorites, setFavorites] = useState([]);
+  const [showFavorites, setShowFavorites] = useState(false);
   useEffect(() => {
   const savedFavorites = localStorage.getItem("favorites");
   if (savedFavorites) {
@@ -220,6 +221,47 @@ href={"tel:" + selectedProduct.phone}
 >
   💬 WhatsApp
 </a>
+<button
+  onClick={() => {
+    const exists = favorites.some(
+      (item) => item.name === selectedProduct.name
+    );
+
+    if (exists) {
+      setFavorites(
+        favorites.filter(
+          (item) => item.name !== selectedProduct.name
+        )
+      );
+    } else {
+      setFavorites([...favorites, selectedProduct]);
+    }
+  }}
+  style={{
+    marginTop: "15px",
+    padding: "10px 16px",
+    borderRadius: "10px",
+    border: "1px solid #f59e0b",
+    background: favorites.some(
+      (item) => item.name === selectedProduct.name
+    )
+      ? "#f59e0b"
+      : "white",
+    color: favorites.some(
+      (item) => item.name === selectedProduct.name
+    )
+      ? "white"
+      : "#f59e0b",
+    fontWeight: "700",
+    cursor: "pointer",
+  }}
+>
+  {favorites.some(
+    (item) => item.name === selectedProduct.name
+  )
+    ? "⭐ En favoritos"
+    : "☆ Agregar a favoritos"}
+</button>
       {selectedProduct.description && (
         <div
           style={{

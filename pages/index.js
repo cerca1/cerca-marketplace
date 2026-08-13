@@ -364,6 +364,23 @@ border: "2px solid #e5e7eb",
           >
             + Publicar
           </button>
+              <button
+  onClick={() =>
+    document.getElementById("favoritos")?.scrollIntoView({
+      behavior: "smooth",
+    })
+  }
+  style={{
+    background: "white",
+    border: "1px solid #d1d5db",
+    borderRadius: "10px",
+    padding: "13px 18px",
+    fontWeight: "600",
+    cursor: "pointer",
+  }}
+>
+  ⭐ Favoritos
+</button>
 
           <button
             style={{
@@ -379,6 +396,92 @@ border: "2px solid #e5e7eb",
           </button>
         </div>
       </header>
+<section
+  id="favoritos"
+  style={{
+    maxWidth: "1100px",
+    margin: "30px auto",
+    padding: "20px",
+  }}
+>
+  <h2 style={{ fontSize: "28px", marginBottom: "20px" }}>
+    ⭐ Mis favoritos
+  </h2>
+
+  {favorites.length === 0 ? (
+    <p style={{ color: "#6b7280" }}>
+      Todavía no tenés publicaciones favoritas.
+    </p>
+  ) : (
+    <div
+      style={{
+        display: "grid",
+        gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
+        gap: "20px",
+      }}
+    >
+      {favorites.map((product) => (
+        <div
+          key={product.name}
+          onClick={() => setSelectedProduct(product)}
+          style={{
+            background: "white",
+            borderRadius: "16px",
+            padding: "20px",
+            border: "1px solid #e5e7eb",
+            boxShadow: "0 4px 14px rgba(0,0,0,0.06)",
+            cursor: "pointer",
+          }}
+        >
+          <div style={{ fontSize: "40px", marginBottom: "10px" }}>
+            {product.image ? (
+              <img
+                src={product.image}
+                alt={product.name}
+                style={{
+                  width: "100%",
+                  height: "160px",
+                  objectFit: "cover",
+                  borderRadius: "12px",
+                }}
+              />
+            ) : (
+              product.icon
+            )}
+          </div>
+
+          <div
+            style={{
+              color: "#6b7280",
+              fontSize: "13px",
+              marginBottom: "7px",
+            }}
+          >
+            {product.category}
+          </div>
+
+          <h3 style={{ margin: "0 0 8px 0" }}>
+            {product.name}
+          </h3>
+
+          <div
+            style={{
+              fontSize: "20px",
+              fontWeight: "700",
+              marginBottom: "8px",
+            }}
+          >
+            ${product.price}
+          </div>
+
+          <div style={{ color: "#6b7280", fontSize: "14px" }}>
+            📍 {product.location}
+          </div>
+        </div>
+      ))}
+    </div>
+  )}
+</section>
 
       {/* HERO */}
       <section

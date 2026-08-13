@@ -81,6 +81,17 @@ const [location, setLocation] = useState("");
       icon: "🚲",
     },
   ];
+  const synonymGroups = [
+  ["auto", "coche", "vehiculo", "vehículo", "automovil", "automóvil"],
+  ["celular", "celulares", "telefono", "teléfono", "movil", "móvil"],
+  ["casa", "vivienda", "hogar", "inmueble", "inmuebles"],
+  ["ropa", "vestimenta", "indumentaria"],
+  ["herramienta", "herramientas"],
+  ["mueble", "muebles"],
+  ["moto", "motocicleta", "motocicletas"],
+  ["camion", "camión", "camioneta", "pickup"],
+  ["bicicleta", "bicicletas", "bici"],
+];
 
 return (
   <>    {selectedProduct && (
@@ -484,6 +495,13 @@ product.category.toLowerCase().includes(search.toLowerCase()) ||
   product.name.toLowerCase().includes("telefono") ||
   product.name.toLowerCase().includes("teléfono") ||
   product.category.toLowerCase().includes("electrónica")
+))
+    ||
+(search.toLowerCase().includes("coche") && (
+  product.name.toLowerCase().includes("auto") ||
+  product.name.toLowerCase().includes("coche") ||
+  product.category.toLowerCase().includes("vehículo") ||
+  product.category.toLowerCase().includes("vehiculos")
 ))
   )
 )

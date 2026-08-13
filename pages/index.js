@@ -473,11 +473,20 @@ style={{
           }}
         >
           {[...publishedProducts, ...products]
- .filter((product) =>
+[9:21, 13/8/2026] Emanuel Vega: publishedProducts, ...products
+[9:22, 13/8/2026] Emanuel Vega: .filter((product) =>
   (product.name.toLowerCase().includes(search.toLowerCase()) ||
     product.location.toLowerCase().includes(search.toLowerCase()) ||
     product.category.toLowerCase().includes(search.toLowerCase())) &&
   (selectedCategory === "" || product.category === selectedCategory)
+)
+[9:30, 13/8/2026] Emanuel Vega: .filter((product) =>
+  (selectedCategory === "" || product.category === selectedCategory) &&
+  (
+    product.name.toLowerCase().includes(search.toLowerCase()) ||
+    product.location.toLowerCase().includes(search.toLowerCase()) ||
+    product.category.toLowerCase().includes(search.toLowerCase())
+  )
 )
   .map((product) => ( 
             <div

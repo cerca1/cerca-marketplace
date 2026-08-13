@@ -1,6 +1,11 @@
 import { useEffect, useState } from "react"; 
+import { createClient } from "@supabase/supabase-js";
 
 export default function Home() {
+  const supabase = createClient(
+  process.env.NEXT_PUBLIC_SUPABASE_URL,
+  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
+);
   const [search, setSearch] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("");
   const [showForm, setShowForm] = useState(false);

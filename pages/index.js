@@ -476,9 +476,15 @@ style={{
  .filter((product) =>
  (selectedCategory === "" || selectedCategory === "Todas" || product.category === selectedCategory) &&
   (
-    product.name.toLowerCase().includes(search.toLowerCase()) ||
-    product.location.toLowerCase().includes(search.toLowerCase()) ||
-    product.category.toLowerCase().includes(search.toLowerCase())
+   product.name.toLowerCase().includes(search.toLowerCase()) ||
+product.location.toLowerCase().includes(search.toLowerCase()) ||
+product.category.toLowerCase().includes(search.toLowerCase()) ||
+(search.toLowerCase().includes("celu") && (
+  product.name.toLowerCase().includes("celular") ||
+  product.name.toLowerCase().includes("telefono") ||
+  product.name.toLowerCase().includes("teléfono") ||
+  product.category.toLowerCase().includes("electrónica")
+))
   )
 )
   .map((product) => ( 

@@ -280,8 +280,7 @@ border: "2px solid #e5e7eb",
     cursor: "pointer",
   }}
 >
-  <option value="">Todas las categorías</option>
-  {categories.map((cat) => (
+<option value="Todas">Todas las categorías</option>  {categories.map((cat) => (
     <option key={cat.name} value={cat.name}>
       {cat.icon} {cat.name}
     </option>
@@ -475,7 +474,7 @@ style={{
           {[...publishedProducts, ...products]
 
  .filter((product) =>
-  (selectedCategory === "" || product.category === selectedCategory) &&
+ (selectedCategory === "" || selectedCategory === "Todas" || product.category === selectedCategory) &&
   (
     product.name.toLowerCase().includes(search.toLowerCase()) ||
     product.location.toLowerCase().includes(search.toLowerCase()) ||

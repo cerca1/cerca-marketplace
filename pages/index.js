@@ -12,6 +12,7 @@ const [location, setLocation] = useState("");
   const [image, setImage] = useState("");
   const [phone, setPhone] = useState("");
   const [selectedProduct, setSelectedProduct] = useState(null);
+  const [favorites, setFavorites] = useState([]);
   const [publishedProducts, setPublishedProducts] = useState(() => {
   
   if (typeof window !== "undefined") {
@@ -518,6 +519,25 @@ onClick={() => setSelectedProduct(product)}
                 boxShadow: "0 4px 14px rgba(0,0,0,0.06)",
               }}
             >
+              <button
+  onClick={(e) => {
+    e.stopPropagation();
+    setFavorites((prev) =>
+      prev.includes(product.name)
+        ? prev.filter((name) => name !== product.name)
+        : [...prev, product.name]
+    );
+  }}
+  style={{
+    float: "right",
+    border: "none",
+    background: "white",
+    fontSize: "24px",
+    cursor: "pointer",
+  }}
+>
+  {favorites.includes(product.name) ? "❤️" : "♡"}
+</button>
               <div
                 style={{
 height: "220px",                  background: "#eef0f3",

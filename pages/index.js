@@ -20,6 +20,7 @@ const [likes, setLikes] = useState(() => {
   }
   return {};
 });  const [showFavorites, setShowFavorites] = useState(false);
+  const [showLikes, setShowLikes] = useState(false);
   useEffect(() => {
   const savedFavorites = localStorage.getItem("favorites");
   if (savedFavorites) {
@@ -389,6 +390,20 @@ border: "2px solid #e5e7eb",
   }}
 >
   ⭐ Favoritos
+</button>
+    <button
+  onClick={() => setShowLikes(true)}
+  style={{
+    background: "white",
+    border: "1px solid #d1d5db",
+    borderRadius: "10px",
+    padding: "13px 18px",
+    fontWeight: "600",
+    cursor: "pointer",
+    marginLeft: "10px",
+  }}
+>
+  ❤️ Me gusta
 </button>
 
           <button
@@ -765,6 +780,23 @@ fontSize: "70px",               }}
                   📍 {product.location}
                 </div>
               </div>
+                  <button
+  onClick={() => {
+    setLikes((prev) => ({
+      ...prev,
+      [product.name]: !prev[product.name],
+    }));
+  }}
+  style={{
+    marginTop: "10px",
+    background: "none",
+    border: "none",
+    fontSize: "22px",
+    cursor: "pointer",
+  }}
+>
+  {likes[product.name] ? "❤️" : "🤍"}
+</button>
             </div>
           ))}
         </div>

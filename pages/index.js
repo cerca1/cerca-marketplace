@@ -13,7 +13,13 @@ const [location, setLocation] = useState("");
   const [phone, setPhone] = useState("");
   const [selectedProduct, setSelectedProduct] = useState(null);
   const [favorites, setFavorites] = useState([]);
-  const [showFavorites, setShowFavorites] = useState(false);
+const [likes, setLikes] = useState(() => {
+  if (typeof window !== "undefined") {
+    const savedLikes = localStorage.getItem("likes");
+    return savedLikes ? JSON.parse(savedLikes) : {};
+  }
+  return {};
+});  const [showFavorites, setShowFavorites] = useState(false);
   useEffect(() => {
   const savedFavorites = localStorage.getItem("favorites");
   if (savedFavorites) {
@@ -38,6 +44,9 @@ useEffect(() => {
     JSON.stringify(publishedProducts)
   );
 }, [publishedProducts]);
+  useEffect(() => {
+  localStorage.setItem("likes", JSON.stringify(likes));
+}, [likes]);
   const categories = [
     { name: "Vehículos", icon: "🚗" },
     { name: "Inmuebles", icon: "🏠" },

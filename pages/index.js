@@ -13,6 +13,16 @@ const [location, setLocation] = useState("");
   const [phone, setPhone] = useState("");
   const [selectedProduct, setSelectedProduct] = useState(null);
   const [favorites, setFavorites] = useState([]);
+  useEffect(() => {
+  const savedFavorites = localStorage.getItem("favorites");
+  if (savedFavorites) {
+    setFavorites(JSON.parse(savedFavorites));
+  }
+}, []);
+
+useEffect(() => {
+  localStorage.setItem("favorites", JSON.stringify(favorites));
+}, [favorites]);
   const [publishedProducts, setPublishedProducts] = useState(() => {
   
   if (typeof window !== "undefined") {

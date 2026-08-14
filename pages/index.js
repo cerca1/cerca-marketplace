@@ -738,25 +738,7 @@ onClick={() => setSelectedProduct(product)}
                 boxShadow: "0 4px 14px rgba(0,0,0,0.06)",
               }}
             >
-              <button
-  onClick={(e) => {
-    e.stopPropagation();
-    setFavorites((prev) =>
-      prev.includes(product.name)
-        ? prev.filter((name) => name !== product.name)
-        : [...prev, product.name]
-    );
-  }}
-  style={{
-    float: "right",
-    border: "none",
-    background: "white",
-    fontSize: "24px",
-    cursor: "pointer",
-  }}
->
-  {favorites.includes(product.name) ? "❤️" : "♡"}
-</button>
+            
               <div
                 style={{
 height: "220px",                  background: "#eef0f3",

@@ -7,6 +7,18 @@ export default function Home() {
   process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
 );
   const [search, setSearch] = useState("");
+  const [clientId] = useState(() => {
+  if (typeof window === "undefined") return "";
+
+  let id = localStorage.getItem("cerca_client_id");
+
+  if (!id) {
+    id = crypto.randomUUID();
+    localStorage.setItem("cerca_client_id", id);
+  }
+
+  return id;
+});
   const [selectedCategory, setSelectedCategory] = useState("");
   const [showForm, setShowForm] = useState(false);
   const [title, setTitle] = useState("");

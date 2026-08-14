@@ -1104,7 +1104,6 @@ localStorage.setItem(
   </section>
 
 {/* FOOTER */}
-     {/* FOOTER */}
 <footer
   style={{
     background: "#111827",

@@ -29,6 +29,16 @@ const [location, setLocation] = useState("");
   const [phone, setPhone] = useState("");
   const [selectedProduct, setSelectedProduct] = useState(null);
   const [favorites, setFavorites] = useState([]);
+  useEffect(() => {
+  if (!clientId) return;
+
+  supabase
+    .from("USUARIOS")
+    .upsert(
+      { ID_DE_CLIENTE: clientId },
+      { onConflict: "ID_DE_CLIENTE" }
+    );
+}, [clientId]);
 const [likes, setLikes] = useState(() => {
   if (typeof window !== "undefined") {
     const savedLikes = localStorage.getItem("likes");

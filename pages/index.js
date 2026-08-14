@@ -35,9 +35,8 @@ const [location, setLocation] = useState("");
   supabase
     .from("USUARIOS")
     .upsert(
-      { ID_DE_CLIENTE: clientId },
-      { onConflict: "ID_DE_CLIENTE" }
-    );
+{ CLIENT_ID: clientId }, 
+{ onConflict: "CLIENT_ID" }    );
 }, [clientId]);
 const [likes, setLikes] = useState(() => {
   if (typeof window !== "undefined") {

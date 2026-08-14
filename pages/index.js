@@ -36,6 +36,30 @@ const [likes, setLikes] = useState(() => {
   }
   return {};
 });  const [showFavorites, setShowFavorites] = useState(false);
+  const [likeCounts, setLikeCounts] = useState({});
+  useEffect(() => {
+  const loadLikeCounts = async () => {
+    const { data, error } = await supabase
+      .from("likes")
+      .select("product_name");
+
+    if (error) {
+      console.error("Error cargando Me gusta:", error);
+      return;
+    }
+
+    const counts = {};
+
+    data.forEach((like) => {
+      counts[like.product_name] =
+        (counts[like.product_name] || 0) + 1;
+    });
+
+    setLikeCounts(counts);
+  };
+
+  loadLikeCounts();
+}, []);
   const [showLikes, setShowLikes] = useState(false);
   useEffect(() => {
   const savedFavorites = localStorage.getItem("favorites");
@@ -837,6 +861,9 @@ onClick={async () => {
   }}
 >
   {likes[product.name] ? "❤️" : "🤍"}
+<span style={{ fontSize: "14px", marginLeft: "5px" }}>
+  {likeCounts[product.name] || 0}
+</span>
 </button>
   <span style={{ fontSize: "14px", marginLeft: "5px" }}>
   {likes[product.name] ? 1 : 0} Me gusta

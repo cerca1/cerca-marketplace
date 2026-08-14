@@ -1104,15 +1104,24 @@ localStorage.setItem(
   </section>
 
 {/* FOOTER */}
-      <footer
-        style={{
-          background: "#111827",
-          color: "white",
-          textAlign: "center",
-          padding: "45px 20px",
-          marginTop: "30px",
-        }}
-      >
+     {/* FOOTER */}
+<footer
+  style={{
+    background: "#111827",
+    color: "white",
+    textAlign: "center",
+    padding: "45px 20px",
+    marginTop: "30px",
+  }}
+>
+  <div style={{ fontSize: "28px", fontWeight: "800" }}>
+    cerca
+  </div>
+
+  <p style={{ color: "#9ca3af" }}>
+    Comprá y vendé cerca tuyo.
+  </p>
+</footer>
         <div style={{ fontSize: "28px", fontWeight: "800" }}>cerca</div>
 
         <p style={{ color: "#9ca3af" }}>

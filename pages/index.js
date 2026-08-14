@@ -29,8 +29,7 @@ const [location, setLocation] = useState("");
   const [phone, setPhone] = useState("");
   const [selectedProduct, setSelectedProduct] = useState(null);
   const [favorites, setFavorites] = useState([]);
-  useEffect(() => {
-  if (!clientId) return;
+  
 
   useEffect(() => {
   if (!clientId) return;

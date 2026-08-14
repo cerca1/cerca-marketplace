@@ -862,9 +862,7 @@ onClick={async (e) => {
   }}
 >
   {likes[product.name] ? "❤️" : "🤍"}
-<span style={{ fontSize: "14px", marginLeft: "5px" }}>
-  {likeCounts[product.name] || 0}
-</span>
+
 </button>
   <span style={{ fontSize: "14px", marginLeft: "5px" }}>
   {likes[product.name] ? 1 : 0} Me gusta

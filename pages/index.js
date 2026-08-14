@@ -1103,7 +1103,7 @@ localStorage.setItem(
       Cancelar
     </button>
   </section>
-)}
+
 {/* FOOTER */}
       <footer
         style={{

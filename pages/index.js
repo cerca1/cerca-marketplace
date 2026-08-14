@@ -821,7 +821,8 @@ fontSize: "70px",               }}
                 </div>
               </div>
                   <button
-onClick={async () => {
+onClick={async (e) => {
+  e.stopPropagation();
   const { data: existingLike } = await supabase
     .from("likes")
     .select("id")

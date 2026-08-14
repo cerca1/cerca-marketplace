@@ -32,11 +32,26 @@ const [location, setLocation] = useState("");
   useEffect(() => {
   if (!clientId) return;
 
-  supabase
-    .from("USUARIOS")
-    .upsert(
-{ CLIENT_ID: clientId }, 
-{ onConflict: "CLIENT_ID" }    );
+  useEffect(() => {
+  if (!clientId) return;
+
+  const guardarUsuario = async () => {
+    const { data, error } = await supabase
+      .from("USUARIOS")
+      .upsert(
+        { CLIENT_ID: clientId },
+        { onConflict: "CLIENT_ID" }
+      )
+      .select();
+
+    if (error) {
+      console.error("ERROR USUARIOS:", error);
+    } else {
+      console.log("USUARIO GUARDADO:", data);
+    }
+  };
+
+  guardarUsuario();
 }, [clientId]);
 const [likes, setLikes] = useState(() => {
   if (typeof window !== "undefined") {

@@ -798,13 +798,38 @@ fontSize: "70px",               }}
                 </div>
               </div>
                   <button
-  onClick={() => {
+onClick={async () => {
+  const { data: existingLike } = await supabase
+    .from("likes")
+    .select("id")
+    .eq("product_name", product.name)
+    .eq("client_id", clientId)
+    .maybeSingle();
+
+  if (existingLike) {
+    await supabase
+      .from("likes")
+      .delete()
+      .eq("id", existingLike.id);
+
     setLikes((prev) => ({
       ...prev,
-      [product.name]: !prev[product.name],
+      [product.name]: false,
     }));
-  }}
-  style={{
+  } else {
+    await supabase
+      .from("likes")
+      .insert({
+        product_name: product.name,
+        client_id: clientId,
+      });
+
+    setLikes((prev) => ({
+      ...prev,
+      [product.name]: true,
+    }));
+  }
+}}  style={{
     marginTop: "10px",
     background: "none",
     border: "none",

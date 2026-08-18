@@ -754,10 +754,10 @@ product.category.toLowerCase().includes(search.toLowerCase()) ||
 onClick={() => setSelectedProduct(product)}
              style={{
   background: "#ffffff",
-  borderRadius: "18px",
+  borderRadius: "16px",
   overflow: "hidden",
   border: "1px solid #e5e7eb",
-  boxShadow: "0 6px 18px rgba(0,0,0,0.08)",
+  boxShadow: "0 4px 14px rgba(0,0,0,0.06)",
   cursor: "pointer",
 }}
             >

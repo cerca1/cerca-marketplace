@@ -752,14 +752,14 @@ product.category.toLowerCase().includes(search.toLowerCase()) ||
             <div
               key={product.name}
 onClick={() => setSelectedProduct(product)}
-              style={{
-                background: "#fffdf2",
-                borderRadius: "16px",
-                overflow: "hidden",
-                border: "1px solid #e5e7eb",
-               
-                boxShadow: "0 4px 14px rgba(0,0,0,0.06)",
-              }}
+             style={{
+  background: "#ffffff",
+  borderRadius: "18px",
+  overflow: "hidden",
+  border: "1px solid #e5e7eb",
+  boxShadow: "0 6px 18px rgba(0,0,0,0.08)",
+  cursor: "pointer",
+}}
             >
             
               <div

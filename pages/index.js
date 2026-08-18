@@ -1120,7 +1120,6 @@ localStorage.setItem(
   <p style={{ color: "#9ca3af" }}>
     Comprá y vendé cerca tuyo.
   </p>
-</footer>
         <div style={{ fontSize: "28px", fontWeight: "800" }}>cerca</div>
 
         <p style={{ color: "#9ca3af" }}>

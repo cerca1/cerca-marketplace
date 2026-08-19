@@ -650,14 +650,15 @@ border: "2px solid #e5e7eb",
           Categorías
         </h2>
 
-        <div
-         style={{
-  display: "flex",
-  flexDirection: "column",
-  gap: "10px",
-  width: "270px",
-}}
-        >
+<div
+  style={{
+    display: "flex",
+    flexDirection: "column",
+    gap: "10px",
+    width: "270px",
+    flexShrink: 0,
+  }}
+>
       {categories.map((category) => (
   <div
     key={category.name}

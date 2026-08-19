@@ -693,8 +693,16 @@ border: "2px solid #e5e7eb",
         fontSize: "32px",
       }}
     >
-      {category.icon}
-    </div>
+<img
+  src={category.image}
+  alt={category.name}
+  style={{
+    width: "64px",
+    height: "64px",
+    objectFit: "cover",
+    borderRadius: "14px",
+  }}
+/>    </div>
 
     <div
       style={{

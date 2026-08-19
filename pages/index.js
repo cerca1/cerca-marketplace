@@ -643,7 +643,7 @@ border: "2px solid #e5e7eb",
     gridTemplateColumns: "270px 1fr",
     gap: "30px",
   }}
->
+<h2>
           Categorías
         </h2>
 

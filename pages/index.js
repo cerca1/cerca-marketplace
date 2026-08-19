@@ -111,17 +111,48 @@ useEffect(() => {
   useEffect(() => {
   localStorage.setItem("likes", JSON.stringify(likes));
 }, [likes]);
-  const categories = [
-    { name: "Vehículos", icon: "🚗" },
-    { name: "Inmuebles", icon: "🏠" },
-    { name: "Electrónica", icon: "📱" },
-    { name: "Hogar", icon: "🛋️" },
-    { name: "Ropa", icon: "👕" },
-    { name: "Herramientas", icon: "🔧" },
-    { name: "Servicios", icon: "🛠️" },
-    { name: "Otros", icon: "📦" },
-  ];
-
+ const categories = [
+  {
+    name: "Vehículos",
+    icon: "🚗",
+    image: "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=500&q=80",
+  },
+  {
+    name: "Inmuebles",
+    icon: "🏠",
+    image: "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=500&q=80",
+  },
+  {
+    name: "Electrónica",
+    icon: "📱",
+    image: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=500&q=80",
+  },
+  {
+    name: "Hogar",
+    icon: "🛋️",
+    image: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=500&q=80",
+  },
+  {
+    name: "Ropa",
+    icon: "👕",
+    image: "https://images.unsplash.com/photo-1445205170230-053b83016050?auto=format&fit=crop&w=500&q=80",
+  },
+  {
+    name: "Herramientas",
+    icon: "🔧",
+    image: "https://images.unsplash.com/photo-1530124566582-a618bc2615dc?auto=format&fit=crop&w=500&q=80",
+  },
+  {
+    name: "Servicios",
+    icon: "🛠️",
+    image: "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=500&q=80",
+  },
+  {
+    name: "Otros",
+    icon: "📦",
+    image: "https://images.unsplash.com/photo-1586528116493-da8b2e3b4c8a?auto=format&fit=crop&w=500&q=80",
+  },
+];
   const products = [
     {
       name: "Auto usado",

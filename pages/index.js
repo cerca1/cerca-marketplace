@@ -645,13 +645,17 @@ border: "2px solid #e5e7eb",
   alignItems: "center",
 }}
   >
-    <div
-      style={{
-        width: "64px",
-        height: "64px",
-        margin: "0 auto 12px",
-        borderRadius: "18px",
-        background: "#fff7cc",
+<div
+  style={{
+    width: "68px",
+    height: "68px",
+    margin: "0 auto 12px",
+    borderRadius: "20px",
+    background: "#fff4b8",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    boxShadow: "0 4px 10px rgba(0,0,0,0.06)",
         display: "flex",
         alignItems: "center",
         justifyContent: "center",

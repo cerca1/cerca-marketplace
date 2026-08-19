@@ -651,11 +651,12 @@ border: "2px solid #e5e7eb",
         </h2>
 
         <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(130px, 1fr))",
-            gap: "15px",
-          }}
+         style={{
+  display: "flex",
+  flexDirection: "column",
+  gap: "10px",
+  width: "270px",
+}}
         >
       {categories.map((category) => (
   <div

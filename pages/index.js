@@ -626,32 +626,47 @@ border: "2px solid #e5e7eb",
             gap: "15px",
           }}
         >
-          {categories.map((category) => (
-            <div
-              key={category.name}
-style={{
-  background: "#fffaf0",
-  border: "1px solid #e5e7eb",
-  borderRadius: "18px",
-  padding: "24px 12px",
-  textAlign: "center",
-  cursor: "pointer",
-  transition: "all 0.2s ease",
-  boxShadow: "0 2px 8px rgba(0,0,0,0.04)",
-}}            >
-<div
-  style={{
-    fontSize: "36px",
-    marginBottom: "12px",
-    lineHeight: "1",
-  }}
->
-                {category.icon}
-              </div>
+      {categories.map((category) => (
+  <div
+    key={category.name}
+    style={{
+      background: "white",
+      border: "1px solid #e5e7eb",
+      borderRadius: "18px",
+      padding: "22px 14px",
+      textAlign: "center",
+      cursor: "pointer",
+      transition: "all 0.2s ease",
+      boxShadow: "0 3px 10px rgba(0,0,0,0.06)",
+    }}
+  >
+    <div
+      style={{
+        width: "64px",
+        height: "64px",
+        margin: "0 auto 12px",
+        borderRadius: "18px",
+        background: "#fff7cc",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        fontSize: "32px",
+      }}
+    >
+      {category.icon}
+    </div>
 
-              <div style={{ fontWeight: "600" }}>{category.name}</div>
-            </div>
-          ))}
+    <div
+      style={{
+        fontSize: "15px",
+        fontWeight: "700",
+        color: "#111827",
+      }}
+    >
+      {category.name}
+    </div>
+  </div>
+))}
         </div>
 
         {/* PUBLICACIONES */}

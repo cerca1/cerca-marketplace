@@ -634,19 +634,16 @@ border: "2px solid #e5e7eb",
 </section>
 
       {/* CATEGORÍAS */}
-      <main
-        style={{
-          maxWidth: "1200px",
-          margin: "auto",
-          padding: "45px 20px",
-        }}
-      >
-        <h2
-          style={{
-            fontSize: "28px",
-            marginBottom: "25px",
-          }}
-        >
+     <main
+  style={{
+    maxWidth: "1200px",
+    margin: "auto",
+    padding: "45px 20px",
+    display: "grid",
+    gridTemplateColumns: "270px 1fr",
+    gap: "30px",
+  }}
+>
           Categorías
         </h2>
 
@@ -664,18 +661,17 @@ border: "2px solid #e5e7eb",
     key={category.name}
     style={{
   background: "#ffffff",
-  border: "1px solid #eeeeee",
-  borderRadius: "20px",
-  padding: "20px 12px",
-  textAlign: "center",
+  border: "none",
+  borderRadius: "12px",
+  padding: "8px 10px",
+  textAlign: "left",
   cursor: "pointer",
-  transition: "all 0.2s ease",
-  boxShadow: "0 4px 12px rgba(0,0,0,0.07)",
-  minHeight: "125px",
   display: "flex",
-  flexDirection: "column",
-  justifyContent: "center",
+  flexDirection: "row",
   alignItems: "center",
+  gap: "12px",
+  minHeight: "58px",
+  boxShadow: "none",
 }}
   >
 <div

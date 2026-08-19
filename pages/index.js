@@ -630,15 +630,20 @@ border: "2px solid #e5e7eb",
   <div
     key={category.name}
     style={{
-      background: "white",
-      border: "1px solid #e5e7eb",
-      borderRadius: "18px",
-      padding: "22px 14px",
-      textAlign: "center",
-      cursor: "pointer",
-      transition: "all 0.2s ease",
-      boxShadow: "0 3px 10px rgba(0,0,0,0.06)",
-    }}
+  background: "#fff",
+  border: "1px solid #f0f0f0",
+  borderRadius: "16px",
+  padding: "18px 12px",
+  textAlign: "center",
+  cursor: "pointer",
+  transition: "all 0.2s ease",
+  boxShadow: "0 4px 12px rgba(0,0,0,0.06)",
+  minHeight: "125px",
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "center",
+  alignItems: "center",
+}}
   >
     <div
       style={{

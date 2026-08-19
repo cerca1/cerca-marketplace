@@ -486,74 +486,121 @@ border: "2px solid #e5e7eb",
 
 
       {/* HERO */}
-      <section
+<section
+  style={{
+    background: "#111827",
+    color: "white",
+    padding: "35px 20px",
+  }}
+>
+  <div
+    style={{
+      maxWidth: "1200px",
+      margin: "0 auto",
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "space-between",
+      gap: "35px",
+      flexWrap: "wrap",
+    }}
+  >
+    <div
+      style={{
+        flex: "1 1 420px",
+        minWidth: "300px",
+      }}
+    >
+      <div
         style={{
-          background: "#111827",
-          color: "white",
-          padding: "65px 20px",
+          display: "inline-block",
+          background: "#374151",
+          padding: "8px 14px",
+          borderRadius: "30px",
+          fontSize: "14px",
+          marginBottom: "18px",
         }}
       >
-        <div
-          style={{
-            maxWidth: "1100px",
-            margin: "auto",
-            textAlign: "center",
-          }}
-        >
-          <div
-            style={{
-              display: "inline-block",
-              background: "#374151",
-              padding: "8px 14px",
-              borderRadius: "30px",
-              fontSize: "14px",
-              marginBottom: "18px",
-            }}
-          >
-            🏪 El marketplace de tu zona
-          </div>
+        📍 El marketplace de tu zona
+      </div>
 
-          <h1
-            style={{
-              fontSize: "48px",
-              margin: "10px 0",
-              fontWeight: "800",
-            }}
-          >
-            Encontrá lo que buscás.
-            <br />
-            Cerca tuyo.
-          </h1>
+      <h1
+        style={{
+          fontSize: "48px",
+          margin: "10px 0",
+          fontWeight: "800",
+          lineHeight: "1.1",
+        }}
+      >
+        Comprá y vendé
+        <br />
+        <span style={{ color: "#facc15" }}>cerca tuyo</span>
+      </h1>
 
-          <p
-            style={{
-              fontSize: "18px",
-              color: "#d1d5db",
-              maxWidth: "650px",
-              margin: "20px auto 30px",
-              lineHeight: "1.6",
-            }}
-          >
-            Comprá, vendé y encontrá productos y servicios de personas y
-            comercios cerca de vos.
-          </p>
+      <p
+        style={{
+          fontSize: "18px",
+          color: "#d1d5db",
+          maxWidth: "600px",
+          margin: "20px 0 30px",
+          lineHeight: "1.6",
+        }}
+      >
+        Miles de productos, servicios y comercios cerca de vos.
+      </p>
 
-          <button
-            style={{
-              background: "white",
-              color: "#111827",
-              border: "none",
-              borderRadius: "10px",
-              padding: "15px 28px",
-              fontSize: "16px",
-              fontWeight: "700",
-              cursor: "pointer",
-            }}
-          >
-            🔎 Explorar publicaciones
-          </button>
-        </div>
-      </section>
+      <button
+        style={{
+          background: "#facc15",
+          color: "#111827",
+          border: "none",
+          borderRadius: "10px",
+          padding: "15px 28px",
+          fontSize: "16px",
+          fontWeight: "700",
+          cursor: "pointer",
+        }}
+      >
+        Publicá gratis
+      </button>
+
+      <button
+        style={{
+          background: "transparent",
+          color: "white",
+          border: "none",
+          marginLeft: "18px",
+          fontSize: "16px",
+          fontWeight: "600",
+          cursor: "pointer",
+        }}
+      >
+        ▶️ ¿Cómo funciona?
+      </button>
+    </div>
+
+    <div
+      style={{
+        flex: "1 1 450px",
+        minWidth: "300px",
+        height: "300px",
+        borderRadius: "22px",
+        overflow: "hidden",
+        background: "#374151",
+      }}
+    >
+      <img
+        src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1200&q=80"
+        alt="Comprá y vendé cerca tuyo"
+        style={{
+          width: "100%",
+          height: "100%",
+          objectFit: "cover",
+          display: "block",
+        }}
+      />
+    </div>
+  </div>
+</section>
 
       {/* CATEGORÍAS */}
       <main

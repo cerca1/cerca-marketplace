@@ -114,7 +114,7 @@ useEffect(() => {
  const categories = [
   {
     name: "Vehículos",
-    icon: "🚗",
+icon: "🚗",
     image: "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=500&q=80",
   },
   {

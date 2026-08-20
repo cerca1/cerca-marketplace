@@ -521,7 +521,11 @@ border: "2px solid #e5e7eb",
   style={{
     background: "#111827",
     color: "white",
-    padding: "35px 20px",
+padding: "35px 20px",
+width: "calc(100% - 300px)",
+marginLeft: "300px",
+boxSizing: "border-box",    position: "relative",
+zIndex: 2,
   }}
 >
   <div

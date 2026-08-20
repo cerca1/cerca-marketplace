@@ -636,6 +636,7 @@ border: "2px solid #e5e7eb",
       {/* CATEGORÍAS */}
      <main
   style={{
+    position: "relative",
     maxWidth: "1200px",
     margin: "auto",
 padding: "10px 20px 45px",    display: "grid",
@@ -645,10 +646,13 @@ padding: "10px 20px 45px",    display: "grid",
   }}
 >
 <div
-  style={{
-    background: "white",
-    marginLeft: "-90px",
-    borderRadius: "18px",
+ style={{
+  background: "white",
+  position: "absolute",
+  left: "20px",
+  top: "520px",
+  width: "270px",
+  borderRadius: "18px",
     border: "1px solid #e5e7eb",
     padding: "22px 18px",
     boxShadow: "0 2px 8px rgba(0,0,0,0.04)",

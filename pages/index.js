@@ -638,8 +638,8 @@ border: "2px solid #e5e7eb",
   style={{
     maxWidth: "1200px",
     margin: "auto",
-    padding: "45px 20px",
-    display: "grid",
+padding: "10px 20px 45px",    display: "grid",
+    marginTop: "-35px",
     gridTemplateColumns: "270px 1fr",
     gap: "30px",
   }}

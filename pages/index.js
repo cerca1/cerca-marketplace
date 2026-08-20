@@ -695,13 +695,15 @@ left: "-60px",
       >
         <div
           style={{
-            width: "30px",
-            height: "30px",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            fontSize: "22px",
-            flexShrink: 0,
+width: "30px",
+height: "30px",
+display: "flex",
+alignItems: "center",
+justifyContent: "center",
+fontSize: "22px",
+flexShrink: 0,
+color: "#111827",
+filter: "grayscale(1)",
           }}
         >
           {category.name === "Vehículos" && "🚗"}

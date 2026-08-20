@@ -640,7 +640,7 @@ border: "2px solid #e5e7eb",
     maxWidth: "1200px",
     margin: "auto",
 padding: "10px 20px 45px",    display: "grid",
-    marginTop: "-190px",
+    marginTop: "-35px",
     gridTemplateColumns: "270px 1fr",
     gap: "30px",
   }}
@@ -648,9 +648,7 @@ padding: "10px 20px 45px",    display: "grid",
 <div
  style={{
   background: "white",
-  position: "absolute",
-  left: "20px",
-  top: "300px",
+ 
   width: "270px",
   borderRadius: "18px",
     border: "1px solid #e5e7eb",

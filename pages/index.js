@@ -644,79 +644,109 @@ border: "2px solid #e5e7eb",
     gap: "30px",
   }}
 >
-<h2>
-          Categorías
-        </h2>
-
 <div
   style={{
-    display: "flex",
-    flexDirection: "column",
-    gap: "10px",
-    width: "270px",
-    flexShrink: 0,
+    background: "white",
+    borderRadius: "18px",
+    border: "1px solid #e5e7eb",
+    padding: "22px 18px",
+    boxShadow: "0 2px 8px rgba(0,0,0,0.04)",
   }}
 >
-      {categories.map((category) => (
-  <div
-    key={category.name}
+  <h2
     style={{
-  background: "#ffffff",
-  border: "none",
-  borderRadius: "12px",
-  padding: "8px 10px",
-  textAlign: "left",
-  cursor: "pointer",
-  display: "flex",
-  flexDirection: "row",
-  alignItems: "center",
-  gap: "12px",
-  minHeight: "58px",
-  boxShadow: "none",
-}}
+      fontSize: "18px",
+      fontWeight: "800",
+      margin: "0 0 18px 8px",
+      color: "#111827",
+    }}
   >
-<div
-  style={{
-    width: "68px",
-    height: "68px",
-    margin: "0 auto 12px",
-    borderRadius: "20px",
-    background: "#fff4b8",
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-    boxShadow: "0 4px 10px rgba(0,0,0,0.06)",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        fontSize: "32px",
-      }}
-    >
-<img
-  src={category.image}
-  alt={category.name}
-  style={{
-    width: "64px",
-    height: "64px",
-    objectFit: "cover",
-    borderRadius: "14px",
-  }}
-/>    </div>
+    CATEGORÍAS
+  </h2>
 
+  <div
+    style={{
+      display: "flex",
+      flexDirection: "column",
+      gap: "4px",
+    }}
+  >
+    {categories.map((category) => (
+      <div
+        key={category.name}
+        style={{
+          display: "flex",
+          alignItems: "center",
+          gap: "14px",
+          padding: "8px 8px",
+          borderRadius: "10px",
+          cursor: "pointer",
+          minHeight: "38px",
+        }}
+      >
+        <div
+          style={{
+            width: "30px",
+            height: "30px",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            fontSize: "22px",
+            flexShrink: 0,
+          }}
+        >
+          {category.name === "Vehículos" && "🚗"}
+          {category.name === "Inmuebles" && "⌂"}
+          {category.name === "Electrónica" && "📱"}
+          {category.name === "Hogar" && "🛋️"}
+          {category.name === "Ropa" && "👕"}
+          {category.name === "Herramientas" && "🛠️"}
+          {category.name === "Servicios" && "⚙️"}
+          {category.name === "Otros" && "•••"}
+        </div>
+
+        <div
+          style={{
+            fontSize: "15px",
+            fontWeight: "600",
+            color: "#111827",
+          }}
+        >
+          {category.name}
+        </div>
+      </div>
+    ))}
+  </div>
+
+  <div
+    style={{
+      marginTop: "18px",
+      background: "#fff4c8",
+      borderRadius: "14px",
+      padding: "14px",
+    }}
+  >
     <div
       style={{
         fontSize: "15px",
-        fontWeight: "700",
+        fontWeight: "800",
         color: "#111827",
       }}
     >
-      {category.name}
+      Publicá gratis
+    </div>
+
+    <div
+      style={{
+        fontSize: "13px",
+        color: "#4b5563",
+        marginTop: "4px",
+      }}
+    >
+      Vendé lo que ya no usás en minutos.
     </div>
   </div>
-))}
-        </div>
-
-        {/* PUBLICACIONES */}
+</div>
         <div
           style={{
             display: "flex",

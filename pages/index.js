@@ -428,6 +428,7 @@ href={"tel:" + selectedProduct.phone}
               style={{
                 width: "100%",
                 boxSizing: "border-box",
+                background: "white",
 padding: "14px 20px",
 borderRadius: "14px",
 border: "2px solid #e5e7eb",

@@ -474,12 +474,32 @@ href={"tel:" + selectedProduct.phone}
                 width: "100%",
                 boxSizing: "border-box",
                 background: "white",
-padding: "14px 20px",
-borderRadius: "14px",
+padding: "14px 55px 14px 20px",
+                borderRadius: "14px",
 border: "2px solid #e5e7eb",
                 outline: "none",
               }}
             />
+              <button
+  type="button"
+  onClick={() => setSearch(search)}
+  style={{
+    position: "absolute",
+    right: "5px",
+    top: "50%",
+    transform: "translateY(-50%)",
+    width: "38px",
+    height: "38px",
+    border: "none",
+    borderRadius: "10px",
+    background: "#FFC400",
+    color: "#111827",
+    cursor: "pointer",
+    fontSize: "18px",
+  }}
+>
+  🔍
+</button>
           </div>
 
 

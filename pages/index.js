@@ -483,19 +483,7 @@ border: "2px solid #e5e7eb",
           </div>
 
 
-          <button
-            style={{
-              background: "#111111",
-              color: "white",
-              border: "none",
-              borderRadius: "10px",
-              padding: "14px 20px",
-              fontWeight: "700",
-              cursor: "pointer",
-            }}
-          >
-            + Publicar
-          </button>
+          
               <button
   onClick={() =>
     document.getElementById("favoritos")?.scrollIntoView({

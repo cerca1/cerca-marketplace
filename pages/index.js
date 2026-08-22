@@ -409,17 +409,62 @@ href={"tel:" + selectedProduct.phone}
             gap: "25px",
           }}
         >
-          <div
-          style={{
-  fontSize: "34px",
-  fontWeight: "900",
-  color: "#111827",
-  letterSpacing: "-1.5px",
-}}
-          >
-            cerca
-          </div>
+       <div
+  style={{
+    display: "flex",
+    alignItems: "center",
+    gap: "8px",
+  }}
+>
+  <div
+    style={{
+      width: "24px",
+      height: "24px",
+      background: "#FFC400",
+      borderRadius: "50% 50% 50% 0",
+      transform: "rotate(-45deg)",
+      position: "relative",
+      flexShrink: 0,
+    }}
+  >
+    <div
+      style={{
+        width: "8px",
+        height: "8px",
+        background: "white",
+        borderRadius: "50%",
+        position: "absolute",
+        top: "8px",
+        left: "8px",
+      }}
+    />
+  </div>
 
+  <div
+    style={{
+      fontSize: "34px",
+      fontWeight: "900",
+      color: "#111827",
+      letterSpacing: "-1.5px",
+    }}
+  >
+    cerca
+  </div>
+
+  <div
+    style={{
+      fontSize: "11px",
+      fontWeight: "700",
+      lineHeight: "1.15",
+      color: "#111827",
+      width: "75px",
+    }}
+  >
+    Comprá y vendé
+    <br />
+    cerca tuyo
+  </div>
+</div>
           <div style={{ flex: 1, position: "relative" }}>
             <input
               value={search}

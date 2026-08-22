@@ -392,7 +392,7 @@ href={"tel:" + selectedProduct.phone}
       {/* HEADER */}
       <header
         style={{
-          background: "#FFC400",
+          background: "white",
           borderBottom: "1px solid #e5e7eb",
           position: "sticky",
           top: 0,

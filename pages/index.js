@@ -520,6 +520,7 @@ border: "2px solid #e5e7eb",
 <section
   style={{
     background: "#111827",
+    borderRadius: "18px",
     color: "white",
 padding: "35px 20px",
 width: "calc(100% - 300px)",
@@ -646,7 +647,7 @@ zIndex: 2,
 padding: "10px 20px 45px",    display: "grid",
     marginTop: "-390px",
     gridTemplateColumns: "270px 1fr",
-    gap: "30px",
+    gap: "40px",
   }}
 >
 <div

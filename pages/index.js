@@ -457,7 +457,7 @@ href={"tel:" + selectedProduct.phone}
       fontWeight: "700",
       lineHeight: "1.15",
       color: "#111827",
-      width: "75px",
+      width: "110px",
     }}
   >
     Comprá y vendé

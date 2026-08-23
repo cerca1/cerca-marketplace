@@ -524,7 +524,17 @@ border: "2px solid #e5e7eb",
 >
   ❤️ Favoritos
 </button>
-
+<button
+  style={{
+    background: "white",
+    border: "none",
+    padding: "13px 18px",
+    fontWeight: "600",
+    cursor: "pointer",
+  }}
+>
+  💬 Mensajes
+</button>
 
 
           <button

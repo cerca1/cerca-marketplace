@@ -578,6 +578,8 @@ zIndex: 2,
       justifyContent: "space-between",
       gap: "35px",
       flexWrap: "nowrap",
+      transform: "scale(0.8)",
+transformOrigin: "center",
     }}
   >
     <div

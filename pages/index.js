@@ -598,7 +598,7 @@ zIndex: 2,
 
       <h1
         style={{
-          fontSize: "48px",
+          fontSize: "30px",
           margin: "10px 0",
           fontWeight: "800",
           lineHeight: "1.1",

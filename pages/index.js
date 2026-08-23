@@ -524,17 +524,7 @@ border: "2px solid #e5e7eb",
 >
   ⭐ Favoritos
 </button>
-    <button
-  onClick={() => setShowLikes(true)}
-  style={{
-    background: "white",
-    border: "1px solid #d1d5db",
-    borderRadius: "10px",
-    padding: "13px 18px",
-    fontWeight: "600",
-    cursor: "pointer",
-    marginLeft: "10px",
-  }}
+
 
 
           <button

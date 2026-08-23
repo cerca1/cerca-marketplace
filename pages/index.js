@@ -655,7 +655,7 @@ zIndex: 2,
       style={{
         flex: "1 1 500px",
         minWidth: "300px",
-        height: "300px",
+        height: "150px",
         borderRadius: "22px",
         overflow: "hidden",
         background: "#374151",

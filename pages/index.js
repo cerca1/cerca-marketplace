@@ -562,7 +562,10 @@ border: "2px solid #e5e7eb",
 padding: "5px 20px",
 width: "calc(100% - 500px)",
 marginLeft: "300px",
-boxSizing: "border-box",    position: "relative",
+    height: "300px",
+overflow: "hidden",
+boxSizing: "border-box", 
+    position: "relative",
 zIndex: 2,
   }}
 >

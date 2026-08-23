@@ -688,7 +688,7 @@ zIndex: 2,
     src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=500&q=80"
     alt="Cerca en teléfono"
     style={{
-      width: "100%",
+      width: "60%",
       height: "100%",
       objectFit: "cover",
       display: "block",

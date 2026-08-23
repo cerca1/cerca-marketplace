@@ -653,7 +653,7 @@ zIndex: 2,
 
     <div
       style={{
-        flex: "1 1 500px",
+        flex: "0 0 250px",
         minWidth: "300px",
         height: "150px",
         borderRadius: "22px",

@@ -535,9 +535,7 @@ border: "2px solid #e5e7eb",
     cursor: "pointer",
     marginLeft: "10px",
   }}
->
-  ❤️ Me gusta
-</button>
+
 
           <button
             style={{

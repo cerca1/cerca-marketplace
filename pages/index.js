@@ -732,7 +732,7 @@ transform: "translate(-20px, -40px) scale(0.8)",
     maxWidth: "1200px",
     margin: "auto",
 padding: "10px 20px 45px",    display: "grid",
-    marginTop: "-320px",
+    marginTop: "-260px",
     gridTemplateColumns: "270px 1fr",
     gap: "40px",
   }}

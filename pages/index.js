@@ -738,7 +738,7 @@ padding: "10px 20px 45px",    display: "grid",
 left: "-60px",
   background: "white",
  
-  width: "250px",
+  width: "220px",
   borderRadius: "20px",
     border: "1px solid #e5e7eb",
     padding: "22px 18px",

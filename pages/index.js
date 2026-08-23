@@ -579,7 +579,7 @@ zIndex: 2,
   >
     <div
       style={{
-        flex: "1 1 420px",
+        flex: "1 1 0",
         minWidth: "300px",
       }}
     >
@@ -653,7 +653,7 @@ zIndex: 2,
 
     <div
       style={{
-        flex: "1 1 450px",
+        flex: "1 1 500px",
         minWidth: "300px",
         height: "300px",
         borderRadius: "22px",
@@ -672,6 +672,51 @@ zIndex: 2,
         }}
       />
     </div>
+        <div
+  style={{
+    flex: "0 0 220px",
+    height: "300px",
+    borderRadius: "22px",
+    overflow: "hidden",
+    background: "white",
+  }}
+>
+  <img
+    src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=500&q=80"
+    alt="Cerca en teléfono"
+    style={{
+      width: "100%",
+      height: "100%",
+      objectFit: "cover",
+      display: "block",
+    }}
+  />
+</div>
+    <div
+  style={{
+    flex: "0 0 250px",
+    background: "white",
+    borderRadius: "22px",
+    padding: "22px",
+    color: "#111827",
+  }}
+>
+  <h2 style={{ marginTop: 0 }}>
+    ¿POR QUÉ ELEGIR CERCA?
+  </h2>
+
+  <p>📍 <strong>100% Local</strong></p>
+  <p>Apoyá a compradores y vendedores de tu ciudad.</p>
+
+  <p>⚡ <strong>Fácil y rápido</strong></p>
+  <p>Publicá en menos de 2 minutos.</p>
+
+  <p>🤝 <strong>Sin comisiones</strong></p>
+  <p>Publicá gratis y vendé sin pagar comisión.</p>
+
+  <p>🏪 <strong>Planes para comercios</strong></p>
+  <p>Más herramientas, más ventas.</p>
+</div>
   </div>
 </section>
 

@@ -574,7 +574,7 @@ zIndex: 2,
       alignItems: "center",
       justifyContent: "space-between",
       gap: "35px",
-      flexWrap: "wrap",
+      flexWrap: "nowrap",
     }}
   >
     <div

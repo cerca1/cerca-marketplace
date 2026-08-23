@@ -578,7 +578,7 @@ zIndex: 2,
       justifyContent: "space-between",
       gap: "35px",
       flexWrap: "nowrap",
-transform: "translateY(-25px) scale(0.8)",
+transform: "translateY(-40px) scale(0.8)",
       transformOrigin: "center",
     }}
   >

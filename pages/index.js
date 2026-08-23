@@ -664,6 +664,7 @@ transform: "translateY(-40px) scale(0.8)",
         borderRadius: "22px",
         overflow: "hidden",
         background: "#374151",
+        transform: "translate(-20px, -15px)",
       }}
     >
       <img

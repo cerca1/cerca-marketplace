@@ -727,7 +727,7 @@ zIndex: 2,
     maxWidth: "1200px",
     margin: "auto",
 padding: "10px 20px 45px",    display: "grid",
-    marginTop: "-390px",
+    marginTop: "-430px",
     gridTemplateColumns: "270px 1fr",
     gap: "40px",
   }}

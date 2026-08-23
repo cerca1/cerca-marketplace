@@ -540,7 +540,7 @@ border: "2px solid #e5e7eb",
           <button
             style={{
               background: "white",
-              border: "1px solid #d1d5db",
+              border: "none",
               borderRadius: "10px",
               padding: "13px 18px",
               fontWeight: "600",

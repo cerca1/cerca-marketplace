@@ -678,7 +678,7 @@ zIndex: 2,
         <div
   style={{
     flex: "0 0 220px",
-    height: "300px",
+    height: "200px",
     borderRadius: "22px",
     overflow: "hidden",
     background: "white",

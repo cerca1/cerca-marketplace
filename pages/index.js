@@ -569,160 +569,25 @@ boxSizing: "border-box",
 zIndex: 2,
   }}
 >
-  <div
-    style={{
-      maxWidth: "1200px",
-      margin: "0 auto",
-      display: "flex",
-      alignItems: "center",
-      justifyContent: "space-between",
-      gap: "35px",
-      flexWrap: "nowrap",
-transform: "translate(-50px, -40px) scale(0.8)",
-      transformOrigin: "center",
-    }}
-  >
-    <div
-      style={{
-        flex: "1 1 0",
-        minWidth: "300px",
-      }}
-    >
-      <div
-        style={{
-          display: "inline-block",
-          background: "#374151",
-          padding: "8px 14px",
-          borderRadius: "30px",
-          fontSize: "14px",
-          marginBottom: "18px",
-        }}
-      >
-        📍 El marketplace de tu zona
-      </div>
-
-      <h1
-        style={{
-          fontSize: "30px",
-          margin: "10px 0",
-          fontWeight: "800",
-          lineHeight: "1.1",
-        }}
-      >
-        Comprá y vendé
-        <br />
-        <span style={{ color: "#facc15" }}>cerca tuyo</span>
-      </h1>
-
-      <p
-        style={{
-          fontSize: "18px",
-          color: "#d1d5db",
-          maxWidth: "600px",
-          margin: "20px 0 30px",
-          lineHeight: "1.6",
-        }}
-      >
-        Miles de productos, servicios y comercios cerca de vos.
-      </p>
-
-      <button
-        style={{
-          background: "#facc15",
-          color: "#111827",
-          border: "none",
-          borderRadius: "10px",
-          padding: "15px 28px",
-          fontSize: "16px",
-          fontWeight: "700",
-          cursor: "pointer",
-        }}
-      >
-        Publicá gratis
-      </button>
-
-      <button
-        style={{
-          background: "transparent",
-          color: "white",
-          border: "none",
-          marginLeft: "18px",
-          fontSize: "16px",
-          fontWeight: "600",
-          cursor: "pointer",
-        }}
-      >
-        ▶️ ¿Cómo funciona?
-      </button>
-    </div>
-
-    <div
-      style={{
-        flex: "0 0 250px",
-        minWidth: "300px",
-        height: "150px",
-        borderRadius: "22px",
-        overflow: "hidden",
-        background: "#374151",
-      }}
-    >
-      <img
-        src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1200&q=80"
-        alt="Comprá y vendé cerca tuyo"
-        style={{
-          width: "100%",
-          height: "100%",
-          objectFit: "cover",
-          display: "block",
-        }}
-      />
-    </div>
-        <div
+<div
   style={{
-    flex: "0 0 220px",
-    height: "200px",
-    borderRadius: "22px",
+    width: "100%",
+    height: "100%",
+    borderRadius: "18px",
     overflow: "hidden",
-    background: "white",
   }}
 >
   <img
-    src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=500&q=80"
-    alt="Cerca en teléfono"
+    src="/cerca-hero.png"
+    alt="Comprá y vendé cerca tuyo"
     style={{
-      width: "60%",
+      width: "100%",
       height: "100%",
       objectFit: "cover",
       display: "block",
     }}
   />
 </div>
-    <div
-  style={{
-    flex: "0 0 250px",
-    background: "white",
-    borderRadius: "22px",
-    padding: "22px",
-    color: "#111827",
-  }}
->
-  <h2 style={{ marginTop: 0 }}>
-    ¿POR QUÉ ELEGIR CERCA?
-  </h2>
-
-  <p>📍 <strong>100% Local</strong></p>
-  <p>Apoyá a compradores y vendedores de tu ciudad.</p>
-
-  <p>⚡ <strong>Fácil y rápido</strong></p>
-  <p>Publicá en menos de 2 minutos.</p>
-
-  <p>🤝 <strong>Sin comisiones</strong></p>
-  <p>Publicá gratis y vendé sin pagar comisión.</p>
-
-  <p>🏪 <strong>Planes para comercios</strong></p>
-  <p>Más herramientas, más ventas.</p>
-</div>
-  </div>
 </section>
 
       {/* CATEGORÍAS */}

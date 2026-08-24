@@ -578,7 +578,7 @@ zIndex: 2,
   }}
 >
   <img
-public/hero.jpeg
+src="/hero.jpeg"
   alt="Comprá y vendé cerca tuyo"
     style={{
       width: "100%",

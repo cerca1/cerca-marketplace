@@ -578,8 +578,8 @@ zIndex: 2,
   }}
 >
   <img
-    src="/cerca-hero.png"
-    alt="Comprá y vendé cerca tuyo"
+src="/hero.jpeg"
+  alt="Comprá y vendé cerca tuyo"
     style={{
       width: "100%",
       height: "100%",

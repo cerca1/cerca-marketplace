@@ -573,7 +573,7 @@ zIndex: 2,
   style={{
     width: "100%",
     height: "100%",
-    borderRadius: "22px",
+    borderRadius: "18px",
     overflow: "hidden",
   }}
 >
@@ -581,8 +581,8 @@ zIndex: 2,
 src="/hero.jpeg"
   alt="Comprá y vendé cerca tuyo"
     style={{
-      width: "100%",
-      height: "100%",
+width: "calc(100% + 4px)",
+height: "calc(100% + 4px)",
       objectFit: "cover",
       display: "block",
     }}

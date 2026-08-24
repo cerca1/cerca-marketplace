@@ -573,7 +573,7 @@ zIndex: 2,
   style={{
     width: "100%",
     height: "100%",
-    borderRadius: "18px",
+    borderRadius: "22px",
     overflow: "hidden",
   }}
 >

@@ -581,8 +581,8 @@ zIndex: 2,
 src="/hero.jpeg"
   alt="Comprá y vendé cerca tuyo"
     style={{
-width: "calc(100% + 4px)",
-height: "calc(100% + 4px)",
+width: "calc(100% + 20px)",
+height: "calc(100% + 20px)",
       objectFit: "cover",
       display: "block",
     }}

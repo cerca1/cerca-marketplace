@@ -585,6 +585,8 @@ width: "calc(100% + 20px)",
 height: "calc(100% + 20px)",
       objectFit: "cover",
       display: "block",
+      position: "relative",
+top: "-20px",
     }}
   />
 </div>

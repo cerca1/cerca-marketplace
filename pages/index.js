@@ -596,8 +596,8 @@ top: "-20px",
      <main
   style={{
     position: "relative",
-maxWidth: "calc(100% - 380px)",
-marginLeft: "0",
+maxWidth: "1200px",
+margin: "auto",
     background: "white",
 borderRadius: "0 18px 18px 0",
 boxShadow: "0 2px 12px rgba(0,0,0,0.08)",

@@ -563,8 +563,8 @@ padding: "0",
 width: "calc(100% - 500px)",
 marginLeft: "240px",
     height: "250px",
-overflow: "hidden",
-boxSizing: "border-box", 
+overflow: "visible",
+    boxSizing: "border-box", 
     position: "relative",
 zIndex: 2,
   }}
@@ -591,7 +591,25 @@ top: "-20px",
   />
 </div>
 </section>
-
+<div
+  style={{
+    position: "absolute",
+    right: "40px",
+    top: "180px",
+    width: "280px",
+    zIndex: 10,
+  }}
+>
+  <img
+    src="/celular-cerca.png"
+    alt="Cerca"
+    style={{
+      width: "100%",
+      height: "auto",
+      display: "block",
+    }}
+  />
+</div>
       {/* CATEGORÍAS */}
      <main
   style={{

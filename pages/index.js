@@ -595,8 +595,8 @@ top: "-20px",
   style={{
     position: "absolute",
     right: "60px",
-    top: "75px",
-    width: "245px",
+    top: "150px",
+    width: "300px",
     zIndex: 10,
   }}
 >

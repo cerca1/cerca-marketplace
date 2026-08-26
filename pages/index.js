@@ -578,7 +578,7 @@ zIndex: 2,
   }}
 >
   <img
-src="/celular-cerca.png"
+src="/hero.jpeg"
   alt="Comprá y vendé cerca tuyo"
     style={{
 width: "calc(100% + 20px)",

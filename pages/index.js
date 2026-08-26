@@ -594,9 +594,9 @@ top: "-20px",
 <div
   style={{
     position: "absolute",
-    right: "20px",
-    top: "70px",
-    width: "230px",
+    right: "60px",
+    top: "75px",
+    width: "245px",
     zIndex: 10,
   }}
 >

@@ -591,25 +591,7 @@ top: "-20px",
   />
 </div>
 </section>
-<div
-  style={{
-    position: "absolute",
-    right: "60px",
-    top: "150px",
-    width: "300px",
-    zIndex: 10,
-  }}
->
-  <img
-    src="/celular-cerca.png"
-    alt="Cerca"
-    style={{
-      width: "100%",
-      height: "auto",
-      display: "block",
-    }}
-  />
-</div>
+
       {/* CATEGORÍAS */}
      <main
   style={{
@@ -955,7 +937,25 @@ onClick={async (e) => {
 </section>
 
 </main>
-
+<div
+  style={{
+    position: "absolute",
+    right: "25px",
+    top: "250px",
+    width: "360px",
+    zIndex: 10,
+  }}
+>
+  <img
+    src="/celular-cerca.png"
+    alt="Cerca"
+    style={{
+      width: "100%",
+      height: "auto",
+      display: "block",
+    }}
+  />
+</div>
 {showForm && (
   <section
     style={{
